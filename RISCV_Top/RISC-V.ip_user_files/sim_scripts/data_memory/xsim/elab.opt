@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L xil_defaultlib -L secureip -L xpm --snapshot data_memory xil_defaultlib.data_memory -log elaborate.log

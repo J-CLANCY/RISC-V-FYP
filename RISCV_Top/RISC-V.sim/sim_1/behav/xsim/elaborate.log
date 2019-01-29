@@ -1,0 +1,54 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto a6ec7d854d5d48d285c68e340648a28c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot RISCV_Top_TB_behav xil_defaultlib.RISCV_Top_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.riscv_package
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture rtl of entity xil_defaultlib.RISCV_IF [riscv_if_default]
+Compiling architecture rtl of entity xil_defaultlib.RISCV_ID [riscv_id_default]
+Compiling architecture rtl of entity xil_defaultlib.RISCV_EX [riscv_ex_default]
+Compiling architecture rtl of entity xil_defaultlib.RISCV_MEM [riscv_mem_default]
+Compiling architecture rtl of entity xil_defaultlib.RISCV_WB [riscv_wb_default]
+Compiling architecture rtl of entity xil_defaultlib.RISCV_RegBank [riscv_regbank_default]
+Compiling architecture rtl of entity xil_defaultlib.RISCV_Top [riscv_top_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(init_00="000...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(init_00="0000000000000...]
+Compiling architecture structure of entity xil_defaultlib.instruction_memory_blk_mem_gen_prim_wrapper_init [instruction_memory_blk_mem_gen_p...]
+Compiling architecture structure of entity xil_defaultlib.instruction_memory_blk_mem_gen_prim_width [instruction_memory_blk_mem_gen_p...]
+Compiling architecture structure of entity xil_defaultlib.instruction_memory_blk_mem_gen_generic_cstr [instruction_memory_blk_mem_gen_g...]
+Compiling architecture structure of entity xil_defaultlib.instruction_memory_blk_mem_gen_top [instruction_memory_blk_mem_gen_t...]
+Compiling architecture structure of entity xil_defaultlib.instruction_memory_blk_mem_gen_v8_4_1_synth [instruction_memory_blk_mem_gen_v...]
+Compiling architecture structure of entity xil_defaultlib.instruction_memory_blk_mem_gen_v8_4_1 [instruction_memory_blk_mem_gen_v...]
+Compiling architecture structure of entity xil_defaultlib.instruction_memory [instruction_memory_default]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(0,15)\]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(init_a="0000...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(rdaddr_collision_hwcon...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.data_memory_blk_mem_gen_prim_wrapper [data_memory_blk_mem_gen_prim_wra...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111111110")(0...]
+Compiling architecture structure of entity xil_defaultlib.data_memory_blk_mem_gen_prim_width [data_memory_blk_mem_gen_prim_wid...]
+Compiling architecture structure of entity xil_defaultlib.data_memory_blk_mem_gen_generic_cstr [data_memory_blk_mem_gen_generic_...]
+Compiling architecture structure of entity xil_defaultlib.data_memory_blk_mem_gen_top [data_memory_blk_mem_gen_top_defa...]
+Compiling architecture structure of entity xil_defaultlib.data_memory_blk_mem_gen_v8_4_1_synth [data_memory_blk_mem_gen_v8_4_1_s...]
+Compiling architecture structure of entity xil_defaultlib.data_memory_blk_mem_gen_v8_4_1 [data_memory_blk_mem_gen_v8_4_1_d...]
+Compiling architecture structure of entity xil_defaultlib.data_memory [data_memory_default]
+Compiling architecture behavioral of entity xil_defaultlib.riscv_top_tb
+Built simulation snapshot RISCV_Top_TB_behav
