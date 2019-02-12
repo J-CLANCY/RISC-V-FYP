@@ -28,7 +28,7 @@ Compiling architecture rtl of entity xil_defaultlib.RISCV_RegBank [riscv_regbank
 Compiling architecture rtl of entity xil_defaultlib.RISCV_Top [riscv_top_default]
 Compiling architecture gnd_v of entity unisim.GND [gnd_default]
 Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(init_00="000...]
-Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(init_00="0000000000000...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(init_00="0000000010000...]
 Compiling architecture structure of entity xil_defaultlib.instruction_memory_blk_mem_gen_prim_wrapper_init [instruction_memory_blk_mem_gen_p...]
 Compiling architecture structure of entity xil_defaultlib.instruction_memory_blk_mem_gen_prim_width [instruction_memory_blk_mem_gen_p...]
 Compiling architecture structure of entity xil_defaultlib.instruction_memory_blk_mem_gen_generic_cstr [instruction_memory_blk_mem_gen_g...]

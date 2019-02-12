@@ -32,7 +32,7 @@ entity RISCV_Top is
         instr_addr : out std_logic_vector(31 downto 0);
         data_addr  : out std_logic_vector(31 downto 0);
         data_out   : out std_logic_vector(31 downto 0);
-        ctrl_out   : out std_logic_vector(1 downto 0));
+        ctrl_out   : out std_logic);
 end RISCV_Top;
 
 architecture RTL of RISCV_Top is
@@ -111,8 +111,7 @@ RISCV_MEM_i: RISCV_MEM
         mem_data_in  => data_in,
 		mem_data_out => data_out,
 		data_val     => MEM_data_val,
-		mem_wr 		 => ctrl_out(1),
-		mem_oe 		 => ctrl_out(0)
+		mem_wr 		 => ctrl_out
   );
 
 RISCV_WB_i: RISCV_WB 

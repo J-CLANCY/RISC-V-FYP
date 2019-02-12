@@ -28,7 +28,7 @@ component RISCV_Top is
       instr_addr : out std_logic_vector(31 downto 0);
       data_addr  : out std_logic_vector(31 downto 0);
       data_out   : out std_logic_vector(31 downto 0);
-      ctrl_out   : out std_logic_vector(1 downto 0));
+      ctrl_out   : out std_logic);
 end component;
 
 component instruction_memory is
@@ -42,9 +42,8 @@ component data_memory is
   port (
     clka      : in std_logic;
     rsta      : in std_logic;
-    ena       : in std_logic;
-    wea       : in std_logic_vector(0 downto 0);
-    addra     : in std_logic_vector(9 downto 0);
+    wea       : in std_logic_vector(3 downto 0);
+    addra     : in std_logic_vector(31 downto 0);
     dina      : in std_logic_vector(31 downto 0);
     douta     : out std_logic_vector(31 downto 0);
     rsta_busy : out std_logic);
@@ -55,13 +54,14 @@ signal   end_of_sim : boolean := false;
 
 signal clk        : std_logic := '0';
 signal rst_b      : std_logic := '1';
+signal rst        : std_logic := '0';
 signal instr_in   : std_logic_vector(31 downto 0);
 signal data_in    : std_logic_vector(31 downto 0);
 signal instr_addr : std_logic_vector(31 downto 0);
 signal data_addr  : std_logic_vector(31 downto 0);
 signal data_out   : std_logic_vector(31 downto 0);
-signal ctrl_out   : std_logic_vector(1 downto 0);
-signal wea        : std_logic_vector(0 downto 0);
+signal ctrl_out   : std_logic;
+signal wea        : std_logic_vector(3 downto 0);
 
 begin
 
@@ -87,17 +87,18 @@ instr_mem_i: instruction_memory
 data_mem_i: data_memory
   Port map(
     clka      => clk,
-    rsta      => rst_b,
-    ena       => ctrl_out(0),
+    rsta      => rst,
     wea       => wea,
-    addra     => data_addr(9 downto 0),
+    addra     => data_addr,
     dina      => data_out,
     douta     => data_in,
     rsta_busy => open
   );
   
-wea_ctrl_out_Assign: wea(0) <= ctrl_out(1); -- Xilinx IPs generate std_logic_vector(0 downto 0) which does not
-                                            -- mesh with std_logic, this is a work around
+wea_ctrl_out_Assign: wea <= (others => ctrl_out); -- Xilinx IPs generate std_logic_vector(0 downto 0) which does not
+                                                     -- mesh with std_logic, this is a work around
+rst_inversion_Assign: rst <= not rst_b;
+
 clk_stim_Gen: process (clk)
 begin
     if (end_of_sim = false) then 
@@ -111,7 +112,7 @@ begin
     rst_b    <= '0';  -- initialise input and toggle rst
     wait for clk_period*1.2;
     rst_b    <= '1'; 
-    wait for clk_period*20;
+    wait for clk_period*50;
     
     report "%N : Simulation Done.";
     end_of_sim <= true;

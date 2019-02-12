@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/user/Desktop/Everyhting/College/4th Year/FYP/RISCV_Top/RISC-V.runs/instruction_memory_synth_1'
+HD_PWD='C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.runs/instruction_memory_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -17,27 +17,29 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_msg_config -id {HDL 9-1061} -limit 100000
+set_msg_config -id {HDL 9-1654} -limit 100000
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/user/Desktop/Everyhting/College/4th Year/FYP/RISCV_Top/RISC-V.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/user/Desktop/Everyhting/College/4th Year/FYP/RISCV_Top/RISC-V.xpr} [current_project]
+set_property webtalk.parent_dir C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.cache/wt [current_project]
+set_property parent.project_path C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo {c:/Users/user/Desktop/Everyhting/College/4th Year/FYP/RISCV_Top/RISC-V.cache/ip} [current_project]
+set_property ip_output_repo c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files {{C:/Users/user/Desktop/Everyhting/College/4th Year/FYP/RISCV_Top/RISC-V.srcs/sources_1/instr_mem.coe}}
+add_files C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.srcs/sources_1/instr_mem.coe
 read_vhdl -library xil_defaultlib {
-  {C:/Users/user/Desktop/Everyhting/College/4th Year/FYP/RISCV_EX/RISCV_EX.srcs/sources_1/imports/new/RISCV_EX.vhd}
-  {C:/Users/user/Desktop/Everyhting/College/4th Year/FYP/RISCV_Top/RISC-V.srcs/sources_1/imports/FYP/RISCV_ID/RISCV_ID.srcs/sources_1/imports/new/RISCV_ID.vhd}
-  {C:/Users/user/Desktop/Everyhting/College/4th Year/FYP/RISCV_Top/RISC-V.srcs/sources_1/imports/FYP/RISCV_IF/RISCV_IF.srcs/sources_1/imports/new/RISCV_IF.vhd}
-  {C:/Users/user/Desktop/Everyhting/College/4th Year/FYP/RISCV_Top/RISC-V.srcs/sources_1/imports/new/RISCV_MEM.vhd}
-  {C:/Users/user/Desktop/Everyhting/College/4th Year/FYP/RISCV_Top/RISC-V.srcs/sources_1/imports/FYP/RISCV_Package.vhd}
-  {C:/Users/user/Desktop/Everyhting/College/4th Year/FYP/RISCV_Top/RISC-V.srcs/sources_1/imports/FYP/RISCV_RegBank/RISCV_RegBank.srcs/sources_1/imports/new/RISCV_RegBank.vhd}
-  {C:/Users/user/Desktop/Everyhting/College/4th Year/FYP/RISCV_Top/RISC-V.srcs/sources_1/imports/FYP/RISCV_WB/RISCV_WB.srcs/sources_1/imports/new/RISCV_WB.vhd}
-  {C:/Users/user/Desktop/Everyhting/College/4th Year/FYP/RISCV_Top/RISC-V.srcs/sources_1/new/RISCV_Top.vhd}
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.srcs/sources_1/imports/FYP/RISCV_EX/RISCV_EX.srcs/sources_1/imports/new/RISCV_EX.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.srcs/sources_1/imports/FYP/RISCV_ID/RISCV_ID.srcs/sources_1/imports/new/RISCV_ID.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.srcs/sources_1/imports/FYP/RISCV_IF/RISCV_IF.srcs/sources_1/imports/new/RISCV_IF.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.srcs/sources_1/imports/new/RISCV_MEM.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.srcs/sources_1/imports/FYP/RISCV_Package.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.srcs/sources_1/imports/FYP/RISCV_RegBank/RISCV_RegBank.srcs/sources_1/imports/new/RISCV_RegBank.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.srcs/sources_1/imports/FYP/RISCV_WB/RISCV_WB.srcs/sources_1/imports/new/RISCV_WB.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.srcs/sources_1/new/RISCV_Top.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -47,8 +49,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/user/Desktop/Everyhting/College/4th Year/FYP/RISCV_Top/RISC-V.srcs/constrs_1/imports/Downloads/pynq-z2_v1.0.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/user/Desktop/Everyhting/College/4th Year/FYP/RISCV_Top/RISC-V.srcs/constrs_1/imports/Downloads/pynq-z2_v1.0.xdc}}]
+read_xdc C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.srcs/constrs_1/imports/Downloads/pynq-z2_v1.0.xdc
+set_property used_in_implementation false [get_files C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.srcs/constrs_1/imports/Downloads/pynq-z2_v1.0.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]

@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../RISC-V.srcs/sources_1/ip/instruction_memory/instruction_memory_sim_netlist.vhdl" \
+
+nosort

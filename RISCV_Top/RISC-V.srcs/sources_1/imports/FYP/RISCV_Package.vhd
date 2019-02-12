@@ -49,8 +49,7 @@ component RISCV_MEM is
         mem_data_in  : in  std_logic_vector(31 downto 0);
 		mem_data_out : out std_logic_vector(31 downto 0);
 		data_val     : out std_logic_vector(31 downto 0);
-		mem_wr 		 : out std_logic;
-		mem_oe 		 : out std_logic);
+		mem_wr 		 : out std_logic);
 end component;
 
 component RISCV_WB is 

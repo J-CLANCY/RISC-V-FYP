@@ -57,9 +57,8 @@
 data_memory your_instance_name (
   .clka(clka),            // input wire clka
   .rsta(rsta),            // input wire rsta
-  .ena(ena),              // input wire ena
-  .wea(wea),              // input wire [0 : 0] wea
-  .addra(addra),          // input wire [9 : 0] addra
+  .wea(wea),              // input wire [3 : 0] wea
+  .addra(addra),          // input wire [31 : 0] addra
   .dina(dina),            // input wire [31 : 0] dina
   .douta(douta),          // output wire [31 : 0] douta
   .rsta_busy(rsta_busy)  // output wire rsta_busy

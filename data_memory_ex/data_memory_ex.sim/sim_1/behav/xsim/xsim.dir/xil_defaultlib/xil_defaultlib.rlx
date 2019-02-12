@@ -1,0 +1,14 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.srcs/sources_1/ip/data_memory/data_memory_sim_netlist.vhdl,1549896111,vhdl,,,,data_memory;data_memory_blk_mem_gen_generic_cstr;data_memory_blk_mem_gen_prim_width;data_memory_blk_mem_gen_prim_wrapper;data_memory_blk_mem_gen_top;data_memory_blk_mem_gen_v8_4_1;data_memory_blk_mem_gen_v8_4_1_synth,,,,,,,,
+c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/addr_gen.vhd,1549927987,vhdl,,,,addr_gen,,,,,,,,
+c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/bmg_stim_gen.vhd,1549927987,vhdl,,,,bmg_stim_gen;register_logic_sram,,,,,,,,
+c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/bmg_tb_pkg.vhd,1549927986,vhdl,c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/bmg_stim_gen.vhd;c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/checker.vhd;c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/data_gen.vhd;c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/data_memory_exdes.vhd,,,bmg_tb_pkg,,,,,,,,
+c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/checker.vhd,1549927987,vhdl,,,,checker,,,,,,,,
+c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/data_gen.vhd,1549927986,vhdl,,,,data_gen,,,,,,,,
+c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/data_memory_exdes.vhd,1549927988,vhdl,,,,data_memory_exdes,,,,,,,,
+c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/data_memory_tb.vhd,1549927990,vhdl,,,,data_memory_tb,,,,,,,,
+c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/data_memory_wrapper.vhd,1549927986,vhdl,,,,data_memory_wrapper,,,,,,,,
+c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/random.vhd,1549927986,vhdl,,,,random,,,,,,,,

@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jan 29 16:22:45 2019
+# Process ID: 10168
+# Current directory: C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10824 C:\Users\user\Desktop\Everyhting\College\4th_Year\FYP\RISC-V-FYP\RISCV_Top\RISC-V.xpr
+# Log file: C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vivado.log
+# Journal file: C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/user/Desktop/Everyhting/College/4th Year/FYP/RISCV_Top' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_EX/RISCV_EX.srcs/sources_1/imports/new/RISCV_EX.vhd', nor could it be found using path 'C:/Users/user/Desktop/Everyhting/College/4th Year/FYP/RISCV_EX/RISCV_EX.srcs/sources_1/imports/new/RISCV_EX.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:45 ; elapsed = 00:00:58 . Memory (MB): peak = 722.195 ; gain = 107.648
+update_compile_order -fileset sources_1
+update_files -from_files C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.srcs/sources_1/imports/FYP/RISCV_EX/RISCV_EX.srcs/sources_1/imports/new/RISCV_EX.vhd -to_files C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_EX/RISCV_EX.srcs/sources_1/imports/new/RISCV_EX.vhd -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_EX/RISCV_EX.srcs/sources_1/imports/new/RISCV_EX.vhd' with file 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.srcs/sources_1/imports/FYP/RISCV_EX/RISCV_EX.srcs/sources_1/imports/new/RISCV_EX.vhd'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Tue Jan 29 16:32:59 2019] Launched synth_1...
+Run output will be captured here: C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Tue Jan 29 18:06:40 2019] Launched impl_1...
+Run output will be captured here: C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.runs/impl_1/runme.log

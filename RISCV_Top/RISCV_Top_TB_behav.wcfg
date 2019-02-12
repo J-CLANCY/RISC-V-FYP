@@ -11,22 +11,19 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="230000001fs"></ZoomEndTime>
-      <Cursor1Time time="0fs"></Cursor1Time>
+      <ZoomStartTime time="73800738fs"></ZoomStartTime>
+      <ZoomEndTime time="5387453874fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="116"></NameColumnWidth>
-      <ValueColumnWidth column_width="77"></ValueColumnWidth>
+      <NameColumnWidth column_width="157"></NameColumnWidth>
+      <ValueColumnWidth column_width="81"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="10" />
    <wvobject fp_name="group102" type="group">
       <obj_property name="label">TB</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/RISCV_Top_TB/clk_period" type="other">
-         <obj_property name="ElementShortName">clk_period</obj_property>
-         <obj_property name="ObjectShortName">clk_period</obj_property>
-      </wvobject>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/RISCV_Top_TB/end_of_sim" type="other">
          <obj_property name="ElementShortName">end_of_sim</obj_property>
          <obj_property name="ObjectShortName">end_of_sim</obj_property>
@@ -35,13 +32,13 @@
          <obj_property name="ElementShortName">clk</obj_property>
          <obj_property name="ObjectShortName">clk</obj_property>
       </wvobject>
-      <wvobject fp_name="/RISCV_Top_TB/instr_in" type="array">
-         <obj_property name="ElementShortName">instr_in[31:0]</obj_property>
-         <obj_property name="ObjectShortName">instr_in[31:0]</obj_property>
-      </wvobject>
       <wvobject fp_name="/RISCV_Top_TB/rst_b" type="logic">
          <obj_property name="ElementShortName">rst_b</obj_property>
          <obj_property name="ObjectShortName">rst_b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISCV_Top_TB/instr_in" type="array">
+         <obj_property name="ElementShortName">instr_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_in[31:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/RISCV_Top_TB/data_in" type="array">
          <obj_property name="ElementShortName">data_in[31:0]</obj_property>
@@ -64,8 +61,12 @@
          <obj_property name="ObjectShortName">ctrl_out[1:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/RISCV_Top_TB/wea" type="array">
-         <obj_property name="ElementShortName">wea[0:0]</obj_property>
-         <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+         <obj_property name="ElementShortName">wea[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wea[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISCV_Top_TB/clk_period" type="other">
+         <obj_property name="ElementShortName">clk_period</obj_property>
+         <obj_property name="ObjectShortName">clk_period</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group126" type="group">
@@ -167,6 +168,7 @@
    <wvobject fp_name="group150" type="group">
       <obj_property name="label">Instr. Mem.</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/RISCV_Top_TB/instr_mem_i/clka" type="logic">
          <obj_property name="ElementShortName">clka</obj_property>
          <obj_property name="ObjectShortName">clka</obj_property>
@@ -183,6 +185,7 @@
    <wvobject fp_name="group178" type="group">
       <obj_property name="label">Data Mem.</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/RISCV_Top_TB/data_mem_i/clka" type="logic">
          <obj_property name="ElementShortName">clka</obj_property>
          <obj_property name="ObjectShortName">clka</obj_property>
@@ -196,26 +199,30 @@
          <obj_property name="ObjectShortName">ena</obj_property>
       </wvobject>
       <wvobject fp_name="/RISCV_Top_TB/data_mem_i/wea" type="array">
-         <obj_property name="ElementShortName">wea[0:0]</obj_property>
-         <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+         <obj_property name="ElementShortName">wea[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wea[3:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/RISCV_Top_TB/data_mem_i/addra" type="array">
-         <obj_property name="ElementShortName">addra[9:0]</obj_property>
-         <obj_property name="ObjectShortName">addra[9:0]</obj_property>
+         <obj_property name="ElementShortName">addra[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addra[31:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/RISCV_Top_TB/data_mem_i/dina" type="array">
          <obj_property name="ElementShortName">dina[31:0]</obj_property>
          <obj_property name="ObjectShortName">dina[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/RISCV_Top_TB/data_mem_i/douta" type="array">
          <obj_property name="ElementShortName">douta[31:0]</obj_property>
          <obj_property name="ObjectShortName">douta[31:0]</obj_property>
       </wvobject>
+      <wvobject fp_name="/RISCV_Top_TB/data_mem_i/rsta_busy" type="logic">
+         <obj_property name="ElementShortName">rsta_busy</obj_property>
+         <obj_property name="ObjectShortName">rsta_busy</obj_property>
+      </wvobject>
    </wvobject>
    <wvobject fp_name="group55" type="group">
       <obj_property name="label">RISCV_IF</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/RISCV_Top_TB/RISCV_Top_i/RISCV_IF_i/clk" type="logic">
          <obj_property name="ElementShortName">clk</obj_property>
          <obj_property name="ObjectShortName">clk</obj_property>
@@ -248,6 +255,7 @@
    <wvobject fp_name="group64" type="group">
       <obj_property name="label">RISCV_ID</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/RISCV_Top_TB/RISCV_Top_i/RISCV_ID_i/instruction" type="array">
          <obj_property name="ElementShortName">instruction[31:0]</obj_property>
          <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
@@ -280,10 +288,15 @@
          <obj_property name="ElementShortName">immediate[31:0]</obj_property>
          <obj_property name="ObjectShortName">immediate[31:0]</obj_property>
       </wvobject>
+      <wvobject fp_name="/RISCV_Top_TB/RISCV_Top_i/RISCV_ID_i/instr" type="array">
+         <obj_property name="ElementShortName">instr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+      </wvobject>
    </wvobject>
    <wvobject fp_name="group81" type="group">
       <obj_property name="label">RISCV_EX</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/RISCV_Top_TB/RISCV_Top_i/RISCV_EX_i/rs1_data" type="array">
          <obj_property name="ElementShortName">rs1_data[31:0]</obj_property>
          <obj_property name="ObjectShortName">rs1_data[31:0]</obj_property>
@@ -352,6 +365,7 @@
    <wvobject fp_name="group90" type="group">
       <obj_property name="label">RISCV_MEM</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/RISCV_Top_TB/RISCV_Top_i/RISCV_MEM_i/opcode" type="array">
          <obj_property name="ElementShortName">opcode[6:0]</obj_property>
          <obj_property name="ObjectShortName">opcode[6:0]</obj_property>
@@ -420,6 +434,7 @@
    <wvobject fp_name="group110" type="group">
       <obj_property name="label">RISCV_RegBank</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/RISCV_Top_TB/RISCV_Top_i/RISCV_RegBank_i/clk" type="logic">
          <obj_property name="ElementShortName">clk</obj_property>
          <obj_property name="ObjectShortName">clk</obj_property>
@@ -459,6 +474,7 @@
       <wvobject fp_name="/RISCV_Top_TB/RISCV_Top_i/RISCV_RegBank_i/reg_bank" type="array">
          <obj_property name="ElementShortName">reg_bank[31:0][31:0]</obj_property>
          <obj_property name="ObjectShortName">reg_bank[31:0][31:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
       </wvobject>
       <wvobject fp_name="/RISCV_Top_TB/RISCV_Top_i/RISCV_RegBank_i/cmb_reg_bank" type="array">
          <obj_property name="ElementShortName">cmb_reg_bank[31:0][31:0]</obj_property>

@@ -58,6 +58,7 @@ begin
 			case compare_cond is
 				when '0' => null;
 				when '1' => result <= X"00000001";
+				when others => null;
 			end case;
 			
       when others => null;
@@ -106,6 +107,7 @@ begin
 	case compare_cond is
 		when '0' => branch_out <= pc_plus_4; -- No branch
 		when '1' => branch_out <= result;    -- Branch
+		when others => null;
 	end case;
 end process;
 
@@ -119,7 +121,7 @@ begin
             A <= rs1_data;
             B <= rs2_data;
 			
-        when "00000"|"11001"|"00100" => -- Register to immediate operations
+        when "00000"|"01000"|"11001"|"00100" => -- Register to immediate operations
             A <= rs1_data;
             B <= immediate;
 			
@@ -137,7 +139,7 @@ end process;
 operation_decode_Logic: process(opcode, f3, f7) -- Logic to select ALU and branch functions
 begin
 	alu_op <= X"0";  -- Addition
-	branch_op <= "110"; -- No branch
+	branch_op <= "111"; -- No branch
 	
 	case opcode(6 downto 2) is
 		when "11011"|"11001" => branch_op <= "110"; -- JAL/JALR
@@ -171,6 +173,7 @@ begin
 					case f7(5) is
 						when '0' => alu_op <= "0111"; -- SRLI
 						when '1' => alu_op <= "0110"; -- SRAI
+						when others => null;
 					end case;
 					
 				when others => null;
@@ -182,6 +185,7 @@ begin
 					case f7(5) is
 						when '0' => null; 			  -- ADD
 						when '1' => alu_op <= "0001"; -- SUB
+						when others => null;
 					end case;
 					
 				when "010" => -- SLT
@@ -200,8 +204,9 @@ begin
 					case f7(5) is
 						when '0' => alu_op <= "0111"; -- SRL
 						when '1' => alu_op <= "0110"; -- SRA
+						when others => null;
 					end case;
-					
+				when others => null;
 			end case;
 			
 		when others => null;

@@ -1,0 +1,380 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Feb 11 23:33:14 2019
+# Process ID: 7052
+# Current directory: c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex
+# Command line: vivado.exe -notrace -source c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.srcs/sources_1/ip/data_memory/data_memory_ex.tcl
+# Log file: c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/vivado.log
+# Journal file: c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.srcs/sources_1/ip/data_memory/data_memory_ex.tcl -notrace
+INFO: [open_example_project] Creating new example project...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:46 ; elapsed = 00:00:36 . Memory (MB): peak = 749.816 ; gain = 59.520
+INFO: [open_example_project] Importing original IP ...
+INFO: [open_example_project] Generating the example project IP ...
+INFO: [open_example_project] Adding example synthesis HDL files ...
+INFO: [open_example_project] Adding example XDC files ...
+INFO: [open_example_project] Adding simulation HDL files ...
+update_compile_order: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 762.805 ; gain = 0.000
+update_compile_order: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 762.805 ; gain = 0.000
+INFO: [open_example_project] Rebuilding all the top level IPs ...
+WARNING: [Vivado 12-3672] The is_managed property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+WARNING: [Vivado 12-3670] The generate_synth_checkpoint property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)...
+WARNING: [Vivado 12-3672] The is_managed property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+WARNING: [Vivado 12-3670] The generate_synth_checkpoint property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.ip_user_files/sim_scripts/data_memory/xsim/data_memory.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.ip_user_files/sim_scripts/data_memory/xsim/summary.log'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Mentor Graphics ModelSim Simulator)...
+WARNING: [Vivado 12-3672] The is_managed property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+WARNING: [Vivado 12-3670] The generate_synth_checkpoint property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.ip_user_files/sim_scripts/data_memory/modelsim/data_memory.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.ip_user_files/sim_scripts/data_memory/modelsim/summary.log'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "QUESTA" (Mentor Graphics Questa Advanced Simulator)...
+WARNING: [Vivado 12-3672] The is_managed property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+WARNING: [Vivado 12-3670] The generate_synth_checkpoint property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.ip_user_files/sim_scripts/data_memory/questa/data_memory.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.ip_user_files/sim_scripts/data_memory/questa/summary.log'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "IES" (Cadence Incisive Enterprise Simulator)...
+WARNING: [Vivado 12-3672] The is_managed property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+WARNING: [Vivado 12-3670] The generate_synth_checkpoint property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.ip_user_files/sim_scripts/data_memory/ies/data_memory.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.ip_user_files/sim_scripts/data_memory/ies/summary.log'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "VCS" (Synopsys Verilog Compiler Simulator)...
+WARNING: [Vivado 12-3672] The is_managed property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+WARNING: [Vivado 12-3670] The generate_synth_checkpoint property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.ip_user_files/sim_scripts/data_memory/vcs/data_memory.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.ip_user_files/sim_scripts/data_memory/vcs/summary.log'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "RIVIERA" (Aldec Riviera-PRO Simulator)...
+WARNING: [Vivado 12-3672] The is_managed property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+WARNING: [Vivado 12-3670] The generate_synth_checkpoint property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.ip_user_files/sim_scripts/data_memory/riviera/data_memory.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.ip_user_files/sim_scripts/data_memory/riviera/summary.log'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "ACTIVEHDL" (Aldec Active-HDL Simulator)...
+WARNING: [Vivado 12-3672] The is_managed property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+WARNING: [Vivado 12-3670] The generate_synth_checkpoint property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.ip_user_files/sim_scripts/data_memory/activehdl/data_memory.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.ip_user_files/sim_scripts/data_memory/activehdl/summary.log'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)...
+WARNING: [Vivado 12-3672] The is_managed property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+WARNING: [Vivado 12-3670] The generate_synth_checkpoint property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.ip_user_files/sim_scripts/data_memory/xcelium/data_memory.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.ip_user_files/sim_scripts/data_memory/xcelium/summary.log'
+export_ip_user_files: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 777.594 ; gain = 14.789
+INFO: [open_example_project] Open Example Project completed
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_memory_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj data_memory_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.srcs/sources_1/ip/data_memory/data_memory_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_memory_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-307] analyzing entity data_memory_blk_mem_gen_prim_width
+INFO: [VRFC 10-307] analyzing entity data_memory_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-307] analyzing entity data_memory_blk_mem_gen_top
+INFO: [VRFC 10-307] analyzing entity data_memory_blk_mem_gen_v8_4_1_synth
+INFO: [VRFC 10-307] analyzing entity data_memory_blk_mem_gen_v8_4_1
+INFO: [VRFC 10-307] analyzing entity data_memory
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/addr_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ADDR_GEN
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/bmg_tb_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/bmg_stim_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity REGISTER_LOGIC_SRAM
+INFO: [VRFC 10-307] analyzing entity BMG_STIM_GEN
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/checker.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CHECKER
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/data_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DATA_GEN
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/data_memory_exdes.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_memory_exdes
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/data_memory_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_memory_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/random.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RANDOM
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/imports/data_memory_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_memory_tb
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 781.582 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 8df6580367654d24a18347ea4d611dc0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot data_memory_tb_behav xil_defaultlib.data_memory_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package unisim.vcomponents
+Compiling package xil_defaultlib.bmg_tb_pkg
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_textio
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture behavioral of entity xil_defaultlib.RANDOM [\RANDOM(width=8,seed=5)\]
+Compiling architecture behavioral of entity xil_defaultlib.RANDOM [\RANDOM(width=8,seed=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.RANDOM [\RANDOM(width=8,seed=3)\]
+Compiling architecture behavioral of entity xil_defaultlib.RANDOM [\RANDOM(width=8)\]
+Compiling architecture data_gen_arch of entity xil_defaultlib.DATA_GEN [data_gen_default]
+Compiling architecture checker_arch of entity xil_defaultlib.CHECKER [checker_default]
+Compiling architecture register_arch of entity xil_defaultlib.REGISTER_LOGIC_SRAM [register_logic_sram_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADDR_GEN [addr_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.BMG_STIM_GEN [bmg_stim_gen_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(0,15)\]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(init_a="0000...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(rdaddr_collision_hwcon...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.data_memory_blk_mem_gen_prim_wrapper [data_memory_blk_mem_gen_prim_wra...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111111110")(0...]
+Compiling architecture structure of entity xil_defaultlib.data_memory_blk_mem_gen_prim_width [data_memory_blk_mem_gen_prim_wid...]
+Compiling architecture structure of entity xil_defaultlib.data_memory_blk_mem_gen_generic_cstr [data_memory_blk_mem_gen_generic_...]
+Compiling architecture structure of entity xil_defaultlib.data_memory_blk_mem_gen_top [data_memory_blk_mem_gen_top_defa...]
+Compiling architecture structure of entity xil_defaultlib.data_memory_blk_mem_gen_v8_4_1_synth [data_memory_blk_mem_gen_v8_4_1_s...]
+Compiling architecture structure of entity xil_defaultlib.data_memory_blk_mem_gen_v8_4_1 [data_memory_blk_mem_gen_v8_4_1_d...]
+Compiling architecture structure of entity xil_defaultlib.data_memory [data_memory_default]
+Compiling architecture xilinx of entity xil_defaultlib.data_memory_wrapper [data_memory_wrapper_default]
+Compiling architecture data_memory_exdes_arch of entity xil_defaultlib.data_memory_exdes [data_memory_exdes_default]
+Compiling architecture data_memory_tb_arch of entity xil_defaultlib.data_memory_tb
+Built simulation snapshot data_memory_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim/xsim.dir/data_memory_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim/xsim.dir/data_memory_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Feb 11 23:38:11 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 55.566 ; gain = 1.227
+INFO: [Common 17-206] Exiting Webtalk at Mon Feb 11 23:38:11 2019...
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:30 . Memory (MB): peak = 781.582 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '30' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "data_memory_tb_behav -key {Behavioral:sim_1:Functional:data_memory_tb} -tclbatch {data_memory_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source data_memory_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 800.648 ; gain = 19.066
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'data_memory_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:21 ; elapsed = 00:00:47 . Memory (MB): peak = 800.648 ; gain = 19.066
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/data_memory_tb/data_memory_exdes_inst}} 
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 803.430 ; gain = 0.133
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_memory_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj data_memory_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 8df6580367654d24a18347ea4d611dc0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot data_memory_tb_behav xil_defaultlib.data_memory_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 803.430 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 803.430 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:26 . Memory (MB): peak = 804.293 ; gain = 0.996
+save_wave_config {c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_tb_behav.wcfg}
+set_property -name {xsim.simulate.runtime} -value {100000ns} -objects [get_filesets sim_1]
+update_ip_catalog
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_memory_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj data_memory_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 8df6580367654d24a18347ea4d611dc0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot data_memory_tb_behav xil_defaultlib.data_memory_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 835.676 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 835.676 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 835.676 ; gain = 0.000
+update_ip_catalog
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_memory_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj data_memory_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 8df6580367654d24a18347ea4d611dc0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot data_memory_tb_behav xil_defaultlib.data_memory_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 835.676 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "data_memory_tb_behav -key {Behavioral:sim_1:Functional:data_memory_tb} -tclbatch {data_memory_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source data_memory_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 835.676 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'data_memory_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 835.676 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/data_memory_tb/data_memory_exdes_inst}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_memory_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj data_memory_tb_vhdl.prj"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+INFO: [Common 17-344] 'relaunch_sim' was cancelled
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'data_memory_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj data_memory_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 839.324 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/data_memory_ex/data_memory_ex.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 8df6580367654d24a18347ea4d611dc0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot data_memory_tb_behav xil_defaultlib.data_memory_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 839.324 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 839.324 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 839.934 ; gain = 0.609
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 12 00:15:35 2019...

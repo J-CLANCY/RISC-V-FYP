@@ -2,7 +2,7 @@
 vhdl xil_defaultlib  \
 "../../../../RISC-V.srcs/sources_1/ip/data_memory/data_memory_sim_netlist.vhdl" \
 "../../../../RISC-V.srcs/sources_1/ip/instruction_memory/instruction_memory_sim_netlist.vhdl" \
-"../../../../../RISCV_EX/RISCV_EX.srcs/sources_1/imports/new/RISCV_EX.vhd" \
+"../../../../RISC-V.srcs/sources_1/imports/FYP/RISCV_EX/RISCV_EX.srcs/sources_1/imports/new/RISCV_EX.vhd" \
 "../../../../RISC-V.srcs/sources_1/imports/FYP/RISCV_ID/RISCV_ID.srcs/sources_1/imports/new/RISCV_ID.vhd" \
 "../../../../RISC-V.srcs/sources_1/imports/FYP/RISCV_IF/RISCV_IF.srcs/sources_1/imports/new/RISCV_IF.vhd" \
 "../../../../RISC-V.srcs/sources_1/imports/new/RISCV_MEM.vhd" \

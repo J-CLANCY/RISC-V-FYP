@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Mon Jan 28 18:33:15 2019
+-- Date        : Mon Feb 11 12:12:45 2019
 -- Host        : hp running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim {C:/Users/user/Desktop/Everyhting/College/4th
---               Year/FYP/RISCV_Top/RISC-V.srcs/sources_1/ip/instruction_memory/instruction_memory_sim_netlist.vhdl}
+-- Command     : write_vhdl -force -mode funcsim
+--               C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.srcs/sources_1/ip/instruction_memory/instruction_memory_sim_netlist.vhdl
 -- Design      : instruction_memory
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -62,8 +62,8 @@ begin
       INITP_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
       INITP_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
       INITP_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_00 => X"00000033000000330000003300000033000000330000003300A0009300A00093",
-      INIT_01 => X"0000003300000033000000330000003300000033000000330000003300000033",
+      INIT_00 => X"0081278300C127030001222300F124230020079300F1262300100793FF010113",
+      INIT_01 => X"00000033000000330000806701010113000785130041278300F1222300F707B3",
       INIT_02 => X"0000003300000033000000330000003300000033000000330000003300000033",
       INIT_03 => X"0000003300000033000000330000003300000033000000330000003300000033",
       INIT_04 => X"0000003300000033000000330000003300000033000000330000003300000033",
