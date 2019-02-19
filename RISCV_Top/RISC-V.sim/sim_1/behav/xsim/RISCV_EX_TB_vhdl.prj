@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../RISC-V.srcs/sources_1/imports/FYP/RISCV_EX/RISCV_EX.srcs/sources_1/imports/new/RISCV_EX.vhd" \
-"../../../../RISC-V.srcs/sim_1/new/RISCV_EX_TB.vhd" \
-
-# Do not sort compile order
-nosort

@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="singleCycCompTop_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="arraypackage" />
+            <top_module name="riscv_package" />
+            <top_module name="singleCycCompTop_TB" />
+            <top_module name="singlecyccomppackage" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="7007168458fs"></ZoomStartTime>
+      <ZoomEndTime time="8835125449fs"></ZoomEndTime>
+      <Cursor1Time time="5382671000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="148"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="group102" type="group">
+      <obj_property name="label">TB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/singleCycCompTop_TB/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/hostCtrlInstrMem" type="logic">
+         <obj_property name="ElementShortName">hostCtrlInstrMem</obj_property>
+         <obj_property name="ObjectShortName">hostCtrlInstrMem</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/hostInstrMem_Load" type="logic">
+         <obj_property name="ElementShortName">hostInstrMem_Load</obj_property>
+         <obj_property name="ObjectShortName">hostInstrMem_Load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/hostInstrMem_LoadIndex" type="array">
+         <obj_property name="ElementShortName">hostInstrMem_LoadIndex[1:0]</obj_property>
+         <obj_property name="ObjectShortName">hostInstrMem_LoadIndex[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/hostInstrMem_LoadDat" type="array">
+         <obj_property name="ElementShortName">hostInstrMem_LoadDat[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hostInstrMem_LoadDat[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/hostInstrMem_Add" type="array">
+         <obj_property name="ElementShortName">hostInstrMem_Add[9:0]</obj_property>
+         <obj_property name="ObjectShortName">hostInstrMem_Add[9:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/hostInstrMem_DatIn" type="array">
+         <obj_property name="ElementShortName">hostInstrMem_DatIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hostInstrMem_DatIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/hostInstrMem_Wr" type="logic">
+         <obj_property name="ElementShortName">hostInstrMem_Wr</obj_property>
+         <obj_property name="ObjectShortName">hostInstrMem_Wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/hostInstrMem_DatOut" type="array">
+         <obj_property name="ElementShortName">hostInstrMem_DatOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hostInstrMem_DatOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/hostCtrlDataAndStackMem" type="logic">
+         <obj_property name="ElementShortName">hostCtrlDataAndStackMem</obj_property>
+         <obj_property name="ObjectShortName">hostCtrlDataAndStackMem</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/hostCtrlDataAndStackMem_Load" type="logic">
+         <obj_property name="ElementShortName">hostCtrlDataAndStackMem_Load</obj_property>
+         <obj_property name="ObjectShortName">hostCtrlDataAndStackMem_Load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/hostCtrlDataAndStackMem_LoadDat" type="array">
+         <obj_property name="ElementShortName">hostCtrlDataAndStackMem_LoadDat[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hostCtrlDataAndStackMem_LoadDat[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/hostCtrlDataAndStackMem_Add" type="array">
+         <obj_property name="ElementShortName">hostCtrlDataAndStackMem_Add[7:0]</obj_property>
+         <obj_property name="ObjectShortName">hostCtrlDataAndStackMem_Add[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/hostCtrlDataAndStackMem_DatIn" type="array">
+         <obj_property name="ElementShortName">hostCtrlDataAndStackMem_DatIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hostCtrlDataAndStackMem_DatIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/hostCtrlDataAndStackMem_Wr" type="logic">
+         <obj_property name="ElementShortName">hostCtrlDataAndStackMem_Wr</obj_property>
+         <obj_property name="ObjectShortName">hostCtrlDataAndStackMem_Wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/hostCtrlDataAndStackMem_DatOut" type="array">
+         <obj_property name="ElementShortName">hostCtrlDataAndStackMem_DatOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hostCtrlDataAndStackMem_DatOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/hostCtrlDataAndStackMem_DatArrayOut" type="array">
+         <obj_property name="ElementShortName">hostCtrlDataAndStackMem_DatArrayOut[511:0]</obj_property>
+         <obj_property name="ObjectShortName">hostCtrlDataAndStackMem_DatArrayOut[511:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/useDebugInstruction" type="logic">
+         <obj_property name="ElementShortName">useDebugInstruction</obj_property>
+         <obj_property name="ObjectShortName">useDebugInstruction</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/debugInstruction" type="array">
+         <obj_property name="ElementShortName">debugInstruction[31:0]</obj_property>
+         <obj_property name="ObjectShortName">debugInstruction[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/runAll" type="logic">
+         <obj_property name="ElementShortName">runAll</obj_property>
+         <obj_property name="ObjectShortName">runAll</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/step" type="logic">
+         <obj_property name="ElementShortName">step</obj_property>
+         <obj_property name="ObjectShortName">step</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/periphAdd" type="array">
+         <obj_property name="ElementShortName">periphAdd[31:0]</obj_property>
+         <obj_property name="ObjectShortName">periphAdd[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/periphIn" type="array">
+         <obj_property name="ElementShortName">periphIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">periphIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/periphWr" type="logic">
+         <obj_property name="ElementShortName">periphWr</obj_property>
+         <obj_property name="ObjectShortName">periphWr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/periphOut" type="array">
+         <obj_property name="ElementShortName">periphOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">periphOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/clrAllBreakpoints" type="logic">
+         <obj_property name="ElementShortName">clrAllBreakpoints</obj_property>
+         <obj_property name="ObjectShortName">clrAllBreakpoints</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/enableBreakpoints" type="logic">
+         <obj_property name="ElementShortName">enableBreakpoints</obj_property>
+         <obj_property name="ObjectShortName">enableBreakpoints</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/clrBreakEvent" type="logic">
+         <obj_property name="ElementShortName">clrBreakEvent</obj_property>
+         <obj_property name="ObjectShortName">clrBreakEvent</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/breakAdd" type="array">
+         <obj_property name="ElementShortName">breakAdd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">breakAdd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/breakWr" type="logic">
+         <obj_property name="ElementShortName">breakWr</obj_property>
+         <obj_property name="ObjectShortName">breakWr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/breakDat" type="array">
+         <obj_property name="ElementShortName">breakDat[32:0]</obj_property>
+         <obj_property name="ObjectShortName">breakDat[32:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/breakDatOut" type="array">
+         <obj_property name="ElementShortName">breakDatOut[32:0]</obj_property>
+         <obj_property name="ObjectShortName">breakDatOut[32:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/break" type="logic">
+         <obj_property name="ElementShortName">break</obj_property>
+         <obj_property name="ObjectShortName">break</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/endOfSim" type="other">
+         <obj_property name="ElementShortName">endOfSim</obj_property>
+         <obj_property name="ObjectShortName">endOfSim</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/instrArray" type="array">
+         <obj_property name="ElementShortName">instrArray[127:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">instrArray[127:0][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/clkPeriod" type="other">
+         <obj_property name="ElementShortName">clkPeriod</obj_property>
+         <obj_property name="ObjectShortName">clkPeriod</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group647" type="group">
+      <obj_property name="label">SingleShot</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleShotStep_i/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleShotStep_i/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleShotStep_i/sw" type="logic">
+         <obj_property name="ElementShortName">sw</obj_property>
+         <obj_property name="ObjectShortName">sw</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleShotStep_i/aShot" type="logic">
+         <obj_property name="ElementShortName">aShot</obj_property>
+         <obj_property name="ObjectShortName">aShot</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleShotStep_i/CS" type="other">
+         <obj_property name="ElementShortName">CS</obj_property>
+         <obj_property name="ObjectShortName">CS</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleShotStep_i/NS" type="other">
+         <obj_property name="ElementShortName">NS</obj_property>
+         <obj_property name="ObjectShortName">NS</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group151" type="group">
+      <obj_property name="label">SingleCycCompAndMem</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/useDebugInstruction" type="logic">
+         <obj_property name="ElementShortName">useDebugInstruction</obj_property>
+         <obj_property name="ObjectShortName">useDebugInstruction</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/debugInstruction" type="array">
+         <obj_property name="ElementShortName">debugInstruction[31:0]</obj_property>
+         <obj_property name="ObjectShortName">debugInstruction[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/PCVec" type="array">
+         <obj_property name="ElementShortName">PCVec[11:0]</obj_property>
+         <obj_property name="ObjectShortName">PCVec[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/execInstr" type="logic">
+         <obj_property name="ElementShortName">execInstr</obj_property>
+         <obj_property name="ObjectShortName">execInstr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/hostCtrlInstrMem" type="logic">
+         <obj_property name="ElementShortName">hostCtrlInstrMem</obj_property>
+         <obj_property name="ObjectShortName">hostCtrlInstrMem</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/hostInstrMem_Load" type="logic">
+         <obj_property name="ElementShortName">hostInstrMem_Load</obj_property>
+         <obj_property name="ObjectShortName">hostInstrMem_Load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/hostInstrMem_LoadIndex" type="array">
+         <obj_property name="ElementShortName">hostInstrMem_LoadIndex[1:0]</obj_property>
+         <obj_property name="ObjectShortName">hostInstrMem_LoadIndex[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/hostInstrMem_LoadDat" type="array">
+         <obj_property name="ElementShortName">hostInstrMem_LoadDat[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hostInstrMem_LoadDat[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/hostInstrMem_Add" type="array">
+         <obj_property name="ElementShortName">hostInstrMem_Add[9:0]</obj_property>
+         <obj_property name="ObjectShortName">hostInstrMem_Add[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/hostInstrMem_DatIn" type="array">
+         <obj_property name="ElementShortName">hostInstrMem_DatIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hostInstrMem_DatIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/hostInstrMem_Wr" type="logic">
+         <obj_property name="ElementShortName">hostInstrMem_Wr</obj_property>
+         <obj_property name="ObjectShortName">hostInstrMem_Wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/hostInstrMem_DatOut" type="array">
+         <obj_property name="ElementShortName">hostInstrMem_DatOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hostInstrMem_DatOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/hostCtrlDataAndStackMem" type="logic">
+         <obj_property name="ElementShortName">hostCtrlDataAndStackMem</obj_property>
+         <obj_property name="ObjectShortName">hostCtrlDataAndStackMem</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/hostCtrlDataAndStackMem_Load" type="logic">
+         <obj_property name="ElementShortName">hostCtrlDataAndStackMem_Load</obj_property>
+         <obj_property name="ObjectShortName">hostCtrlDataAndStackMem_Load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/hostCtrlDataAndStackMem_LoadDat" type="array">
+         <obj_property name="ElementShortName">hostCtrlDataAndStackMem_LoadDat[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hostCtrlDataAndStackMem_LoadDat[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/hostCtrlDataAndStackMem_Add" type="array">
+         <obj_property name="ElementShortName">hostCtrlDataAndStackMem_Add[7:0]</obj_property>
+         <obj_property name="ObjectShortName">hostCtrlDataAndStackMem_Add[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/hostCtrlDataAndStackMem_DatIn" type="array">
+         <obj_property name="ElementShortName">hostCtrlDataAndStackMem_DatIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hostCtrlDataAndStackMem_DatIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/hostCtrlDataAndStackMem_Wr" type="logic">
+         <obj_property name="ElementShortName">hostCtrlDataAndStackMem_Wr</obj_property>
+         <obj_property name="ObjectShortName">hostCtrlDataAndStackMem_Wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/hostCtrlDataAndStackMem_DatOut" type="array">
+         <obj_property name="ElementShortName">hostCtrlDataAndStackMem_DatOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hostCtrlDataAndStackMem_DatOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/hostCtrlDataAndStackMem_DatArrayOut" type="array">
+         <obj_property name="ElementShortName">hostCtrlDataAndStackMem_DatArrayOut[511:0]</obj_property>
+         <obj_property name="ObjectShortName">hostCtrlDataAndStackMem_DatArrayOut[511:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/clrAllBreakpoints" type="logic">
+         <obj_property name="ElementShortName">clrAllBreakpoints</obj_property>
+         <obj_property name="ObjectShortName">clrAllBreakpoints</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/enableBreakpoints" type="logic">
+         <obj_property name="ElementShortName">enableBreakpoints</obj_property>
+         <obj_property name="ObjectShortName">enableBreakpoints</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/clrBreakEvent" type="logic">
+         <obj_property name="ElementShortName">clrBreakEvent</obj_property>
+         <obj_property name="ObjectShortName">clrBreakEvent</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/breakAdd" type="array">
+         <obj_property name="ElementShortName">breakAdd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">breakAdd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/breakWr" type="logic">
+         <obj_property name="ElementShortName">breakWr</obj_property>
+         <obj_property name="ObjectShortName">breakWr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/breakDat" type="array">
+         <obj_property name="ElementShortName">breakDat[32:0]</obj_property>
+         <obj_property name="ObjectShortName">breakDat[32:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/breakDatOut" type="array">
+         <obj_property name="ElementShortName">breakDatOut[32:0]</obj_property>
+         <obj_property name="ObjectShortName">breakDatOut[32:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/break" type="logic">
+         <obj_property name="ElementShortName">break</obj_property>
+         <obj_property name="ObjectShortName">break</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/periphAdd" type="array">
+         <obj_property name="ElementShortName">periphAdd[31:0]</obj_property>
+         <obj_property name="ObjectShortName">periphAdd[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/periphIn" type="array">
+         <obj_property name="ElementShortName">periphIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">periphIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/periphWr" type="logic">
+         <obj_property name="ElementShortName">periphWr</obj_property>
+         <obj_property name="ObjectShortName">periphWr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/periphOut" type="array">
+         <obj_property name="ElementShortName">periphOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">periphOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/PCinteger" type="other">
+         <obj_property name="ElementShortName">PCinteger</obj_property>
+         <obj_property name="ObjectShortName">PCinteger</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/intPCVec" type="array">
+         <obj_property name="ElementShortName">intPCVec[11:0]</obj_property>
+         <obj_property name="ObjectShortName">intPCVec[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instruction" type="array">
+         <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instructionToDecoder" type="array">
+         <obj_property name="ElementShortName">instructionToDecoder[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instructionToDecoder[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/intDSAdd" type="array">
+         <obj_property name="ElementShortName">intDSAdd[11:0]</obj_property>
+         <obj_property name="ObjectShortName">intDSAdd[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/intDSIn" type="array">
+         <obj_property name="ElementShortName">intDSIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">intDSIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/intDSWr" type="logic">
+         <obj_property name="ElementShortName">intDSWr</obj_property>
+         <obj_property name="ObjectShortName">intDSWr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/DSOut" type="array">
+         <obj_property name="ElementShortName">DSOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DSOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/PCToMem" type="array">
+         <obj_property name="ElementShortName">PCToMem[9:0]</obj_property>
+         <obj_property name="ObjectShortName">PCToMem[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/memRdWr" type="logic">
+         <obj_property name="ElementShortName">memRdWr</obj_property>
+         <obj_property name="ObjectShortName">memRdWr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/memValid" type="logic">
+         <obj_property name="ElementShortName">memValid</obj_property>
+         <obj_property name="ObjectShortName">memValid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/memBusy" type="logic">
+         <obj_property name="ElementShortName">memBusy</obj_property>
+         <obj_property name="ObjectShortName">memBusy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/memSize" type="array">
+         <obj_property name="ElementShortName">memSize[1:0]</obj_property>
+         <obj_property name="ObjectShortName">memSize[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/addr" type="array">
+         <obj_property name="ElementShortName">addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/DIn" type="array">
+         <obj_property name="ElementShortName">DIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/Dout" type="array">
+         <obj_property name="ElementShortName">Dout[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Dout[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/PC" type="array">
+         <obj_property name="ElementShortName">PC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group203" type="group">
+      <obj_property name="label">InstrMemArray</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/enPort0" type="logic">
+         <obj_property name="ElementShortName">enPort0</obj_property>
+         <obj_property name="ObjectShortName">enPort0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/p0Load" type="logic">
+         <obj_property name="ElementShortName">p0Load</obj_property>
+         <obj_property name="ObjectShortName">p0Load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/p0LoadDatIndex" type="array">
+         <obj_property name="ElementShortName">p0LoadDatIndex[1:0]</obj_property>
+         <obj_property name="ObjectShortName">p0LoadDatIndex[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/p0LoadDat" type="array">
+         <obj_property name="ElementShortName">p0LoadDat[31:0]</obj_property>
+         <obj_property name="ObjectShortName">p0LoadDat[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/p0Add" type="array">
+         <obj_property name="ElementShortName">p0Add[9:0]</obj_property>
+         <obj_property name="ObjectShortName">p0Add[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/p0DatIn" type="array">
+         <obj_property name="ElementShortName">p0DatIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">p0DatIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/p0Wr" type="logic">
+         <obj_property name="ElementShortName">p0Wr</obj_property>
+         <obj_property name="ObjectShortName">p0Wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/p0DatOut" type="array">
+         <obj_property name="ElementShortName">p0DatOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">p0DatOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/p1Load" type="logic">
+         <obj_property name="ElementShortName">p1Load</obj_property>
+         <obj_property name="ObjectShortName">p1Load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/p1LoadDat" type="array">
+         <obj_property name="ElementShortName">p1LoadDat[31:0]</obj_property>
+         <obj_property name="ObjectShortName">p1LoadDat[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/p1Add" type="array">
+         <obj_property name="ElementShortName">p1Add[9:0]</obj_property>
+         <obj_property name="ObjectShortName">p1Add[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/p1DatIn" type="array">
+         <obj_property name="ElementShortName">p1DatIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">p1DatIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/p1Wr" type="logic">
+         <obj_property name="ElementShortName">p1Wr</obj_property>
+         <obj_property name="ObjectShortName">p1Wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/p1DatOut" type="array">
+         <obj_property name="ElementShortName">p1DatOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">p1DatOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/XX_NS" type="array">
+         <obj_property name="ElementShortName">XX_NS[0:127][31:0]</obj_property>
+         <obj_property name="ObjectShortName">XX_NS[0:127][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/XX_CS" type="array">
+         <obj_property name="ElementShortName">XX_CS[0:127][31:0]</obj_property>
+         <obj_property name="ObjectShortName">XX_CS[0:127][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/XX_load" type="logic">
+         <obj_property name="ElementShortName">XX_load</obj_property>
+         <obj_property name="ObjectShortName">XX_load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/XX_loadDat" type="array">
+         <obj_property name="ElementShortName">XX_loadDat[31:0]</obj_property>
+         <obj_property name="ObjectShortName">XX_loadDat[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/XX_datIn" type="array">
+         <obj_property name="ElementShortName">XX_datIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">XX_datIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/XX_add" type="array">
+         <obj_property name="ElementShortName">XX_add[9:0]</obj_property>
+         <obj_property name="ObjectShortName">XX_add[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/XX_wr" type="logic">
+         <obj_property name="ElementShortName">XX_wr</obj_property>
+         <obj_property name="ObjectShortName">XX_wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/instrMemArray_i/intP0LoadDat" type="array">
+         <obj_property name="ElementShortName">intP0LoadDat[0:127][31:0]</obj_property>
+         <obj_property name="ObjectShortName">intP0LoadDat[0:127][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group204" type="group">
+      <obj_property name="label">MainMemory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/mainMemory_i/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/mainMemory_i/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/mainMemory_i/ce" type="logic">
+         <obj_property name="ElementShortName">ce</obj_property>
+         <obj_property name="ObjectShortName">ce</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/mainMemory_i/memRdWr" type="logic">
+         <obj_property name="ElementShortName">memRdWr</obj_property>
+         <obj_property name="ObjectShortName">memRdWr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/mainMemory_i/addr" type="array">
+         <obj_property name="ElementShortName">addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/mainMemory_i/DIn" type="array">
+         <obj_property name="ElementShortName">DIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/mainMemory_i/valid" type="logic">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/mainMemory_i/memSize" type="array">
+         <obj_property name="ElementShortName">memSize[1:0]</obj_property>
+         <obj_property name="ObjectShortName">memSize[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/mainMemory_i/Dout" type="array">
+         <obj_property name="ElementShortName">Dout[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Dout[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/mainMemory_i/memBusy" type="logic">
+         <obj_property name="ElementShortName">memBusy</obj_property>
+         <obj_property name="ObjectShortName">memBusy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/mainMemory_i/count" type="other">
+         <obj_property name="ElementShortName">count</obj_property>
+         <obj_property name="ObjectShortName">count</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/mainMemory_i/memReg" type="array">
+         <obj_property name="ElementShortName">memReg[127:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">memReg[127:0][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/mainMemory_i/releaseWr" type="logic">
+         <obj_property name="ElementShortName">releaseWr</obj_property>
+         <obj_property name="ObjectShortName">releaseWr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/mainMemory_i/releaseRd" type="logic">
+         <obj_property name="ElementShortName">releaseRd</obj_property>
+         <obj_property name="ObjectShortName">releaseRd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/mainMemory_i/memWrIntern" type="logic">
+         <obj_property name="ElementShortName">memWrIntern</obj_property>
+         <obj_property name="ObjectShortName">memWrIntern</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/mainMemory_i/memRdIntern" type="logic">
+         <obj_property name="ElementShortName">memRdIntern</obj_property>
+         <obj_property name="ObjectShortName">memRdIntern</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/mainMemory_i/DinReg" type="array">
+         <obj_property name="ElementShortName">DinReg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DinReg[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/mainMemory_i/addrReg" type="array">
+         <obj_property name="ElementShortName">addrReg[6:0]</obj_property>
+         <obj_property name="ObjectShortName">addrReg[6:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group126" type="group">
+      <obj_property name="label">RISCV_Top</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/rst_b" type="logic">
+         <obj_property name="ElementShortName">rst_b</obj_property>
+         <obj_property name="ObjectShortName">rst_b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/ce" type="logic">
+         <obj_property name="ElementShortName">ce</obj_property>
+         <obj_property name="ObjectShortName">ce</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/mem_busy" type="logic">
+         <obj_property name="ElementShortName">mem_busy</obj_property>
+         <obj_property name="ObjectShortName">mem_busy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/instr_in" type="array">
+         <obj_property name="ElementShortName">instr_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/data_in" type="array">
+         <obj_property name="ElementShortName">data_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/instr_addr" type="array">
+         <obj_property name="ElementShortName">instr_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/data_addr" type="array">
+         <obj_property name="ElementShortName">data_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/data_out" type="array">
+         <obj_property name="ElementShortName">data_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/mem_rd_wr" type="logic">
+         <obj_property name="ElementShortName">mem_rd_wr</obj_property>
+         <obj_property name="ObjectShortName">mem_rd_wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/mem_valid" type="logic">
+         <obj_property name="ElementShortName">mem_valid</obj_property>
+         <obj_property name="ObjectShortName">mem_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/mem_size" type="array">
+         <obj_property name="ElementShortName">mem_size[1:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_size[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/clrAllBreakpoints" type="logic">
+         <obj_property name="ElementShortName">clrAllBreakpoints</obj_property>
+         <obj_property name="ObjectShortName">clrAllBreakpoints</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/enableBreakpoints" type="logic">
+         <obj_property name="ElementShortName">enableBreakpoints</obj_property>
+         <obj_property name="ObjectShortName">enableBreakpoints</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/clrBreakEvent" type="logic">
+         <obj_property name="ElementShortName">clrBreakEvent</obj_property>
+         <obj_property name="ObjectShortName">clrBreakEvent</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/breakAdd" type="array">
+         <obj_property name="ElementShortName">breakAdd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">breakAdd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/breakWr" type="logic">
+         <obj_property name="ElementShortName">breakWr</obj_property>
+         <obj_property name="ObjectShortName">breakWr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/breakDat" type="array">
+         <obj_property name="ElementShortName">breakDat[32:0]</obj_property>
+         <obj_property name="ObjectShortName">breakDat[32:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/breakDatOut" type="array">
+         <obj_property name="ElementShortName">breakDatOut[32:0]</obj_property>
+         <obj_property name="ObjectShortName">breakDatOut[32:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/break" type="logic">
+         <obj_property name="ElementShortName">break</obj_property>
+         <obj_property name="ObjectShortName">break</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/IF_pc_plus_4" type="array">
+         <obj_property name="ElementShortName">IF_pc_plus_4[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IF_pc_plus_4[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/IF_pc" type="array">
+         <obj_property name="ElementShortName">IF_pc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IF_pc[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/ID_rs1_addr" type="array">
+         <obj_property name="ElementShortName">ID_rs1_addr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_rs1_addr[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/ID_rs2_addr" type="array">
+         <obj_property name="ElementShortName">ID_rs2_addr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_rs2_addr[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/ID_rd_addr" type="array">
+         <obj_property name="ElementShortName">ID_rd_addr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_rd_addr[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/ID_f3" type="array">
+         <obj_property name="ElementShortName">ID_f3[2:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_f3[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/ID_f7" type="array">
+         <obj_property name="ElementShortName">ID_f7[6:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_f7[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/ID_opcode" type="array">
+         <obj_property name="ElementShortName">ID_opcode[6:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_opcode[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/ID_immediate" type="array">
+         <obj_property name="ElementShortName">ID_immediate[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_immediate[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/EX_alu_out" type="array">
+         <obj_property name="ElementShortName">EX_alu_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_alu_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/EX_branch_out" type="array">
+         <obj_property name="ElementShortName">EX_branch_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_branch_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/MEM_data_val" type="array">
+         <obj_property name="ElementShortName">MEM_data_val[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM_data_val[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/WB_rd_data" type="array">
+         <obj_property name="ElementShortName">WB_rd_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WB_rd_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/WB_reg_wr" type="logic">
+         <obj_property name="ElementShortName">WB_reg_wr</obj_property>
+         <obj_property name="ObjectShortName">WB_reg_wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RegBank_rs1_data" type="array">
+         <obj_property name="ElementShortName">RegBank_rs1_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RegBank_rs1_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RegBank_rs2_data" type="array">
+         <obj_property name="ElementShortName">RegBank_rs2_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RegBank_rs2_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RegBank_reg_bank" type="array">
+         <obj_property name="ElementShortName">RegBank_reg_bank[31:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">RegBank_reg_bank[31:0][31:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group55" type="group">
+      <obj_property name="label">RISCV_IF</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_IF_i/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_IF_i/rst_b" type="logic">
+         <obj_property name="ElementShortName">rst_b</obj_property>
+         <obj_property name="ObjectShortName">rst_b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_IF_i/ce" type="logic">
+         <obj_property name="ElementShortName">ce</obj_property>
+         <obj_property name="ObjectShortName">ce</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_IF_i/mem_busy" type="logic">
+         <obj_property name="ElementShortName">mem_busy</obj_property>
+         <obj_property name="ObjectShortName">mem_busy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_IF_i/npc" type="array">
+         <obj_property name="ElementShortName">npc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">npc[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_IF_i/pc_plus_4" type="array">
+         <obj_property name="ElementShortName">pc_plus_4[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pc_plus_4[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_IF_i/pc" type="array">
+         <obj_property name="ElementShortName">pc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_IF_i/pc_internal" type="array">
+         <obj_property name="ElementShortName">pc_internal[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pc_internal[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group64" type="group">
+      <obj_property name="label">RISCV_ID</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_ID_i/instruction" type="array">
+         <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_ID_i/rs1" type="array">
+         <obj_property name="ElementShortName">rs1[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs1[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_ID_i/rs2" type="array">
+         <obj_property name="ElementShortName">rs2[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs2[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_ID_i/rd" type="array">
+         <obj_property name="ElementShortName">rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_ID_i/f3" type="array">
+         <obj_property name="ElementShortName">f3[2:0]</obj_property>
+         <obj_property name="ObjectShortName">f3[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_ID_i/f7" type="array">
+         <obj_property name="ElementShortName">f7[6:0]</obj_property>
+         <obj_property name="ObjectShortName">f7[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_ID_i/opcode" type="array">
+         <obj_property name="ElementShortName">opcode[6:0]</obj_property>
+         <obj_property name="ObjectShortName">opcode[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_ID_i/immediate" type="array">
+         <obj_property name="ElementShortName">immediate[31:0]</obj_property>
+         <obj_property name="ObjectShortName">immediate[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_ID_i/instr" type="array">
+         <obj_property name="ElementShortName">instr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group81" type="group">
+      <obj_property name="label">RISCV_EX</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_EX_i/rs1_data" type="array">
+         <obj_property name="ElementShortName">rs1_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rs1_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_EX_i/rs2_data" type="array">
+         <obj_property name="ElementShortName">rs2_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rs2_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_EX_i/rs2_addr" type="array">
+         <obj_property name="ElementShortName">rs2_addr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs2_addr[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_EX_i/f3" type="array">
+         <obj_property name="ElementShortName">f3[2:0]</obj_property>
+         <obj_property name="ObjectShortName">f3[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_EX_i/f7" type="array">
+         <obj_property name="ElementShortName">f7[6:0]</obj_property>
+         <obj_property name="ObjectShortName">f7[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_EX_i/opcode" type="array">
+         <obj_property name="ElementShortName">opcode[6:0]</obj_property>
+         <obj_property name="ObjectShortName">opcode[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_EX_i/immediate" type="array">
+         <obj_property name="ElementShortName">immediate[31:0]</obj_property>
+         <obj_property name="ObjectShortName">immediate[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_EX_i/pc_plus_4" type="array">
+         <obj_property name="ElementShortName">pc_plus_4[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pc_plus_4[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_EX_i/alu_out" type="array">
+         <obj_property name="ElementShortName">alu_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_EX_i/branch_out" type="array">
+         <obj_property name="ElementShortName">branch_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">branch_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_EX_i/A" type="array">
+         <obj_property name="ElementShortName">A[31:0]</obj_property>
+         <obj_property name="ObjectShortName">A[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_EX_i/B" type="array">
+         <obj_property name="ElementShortName">B[31:0]</obj_property>
+         <obj_property name="ObjectShortName">B[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_EX_i/alu_op" type="array">
+         <obj_property name="ElementShortName">alu_op[3:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_op[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_EX_i/branch_op" type="array">
+         <obj_property name="ElementShortName">branch_op[2:0]</obj_property>
+         <obj_property name="ObjectShortName">branch_op[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_EX_i/compare_cond" type="logic">
+         <obj_property name="ElementShortName">compare_cond</obj_property>
+         <obj_property name="ObjectShortName">compare_cond</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_EX_i/result" type="array">
+         <obj_property name="ElementShortName">result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">result[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group90" type="group">
+      <obj_property name="label">RISCV_MEM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_MEM_i/opcode" type="array">
+         <obj_property name="ElementShortName">opcode[6:0]</obj_property>
+         <obj_property name="ObjectShortName">opcode[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_MEM_i/f3" type="array">
+         <obj_property name="ElementShortName">f3[2:0]</obj_property>
+         <obj_property name="ObjectShortName">f3[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_MEM_i/rs2_data" type="array">
+         <obj_property name="ElementShortName">rs2_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rs2_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_MEM_i/mem_data_in" type="array">
+         <obj_property name="ElementShortName">mem_data_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_data_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_MEM_i/mem_data_out" type="array">
+         <obj_property name="ElementShortName">mem_data_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_data_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_MEM_i/data_val" type="array">
+         <obj_property name="ElementShortName">data_val[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_val[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_MEM_i/mem_rd_wr" type="logic">
+         <obj_property name="ElementShortName">mem_rd_wr</obj_property>
+         <obj_property name="ObjectShortName">mem_rd_wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_MEM_i/mem_valid" type="logic">
+         <obj_property name="ElementShortName">mem_valid</obj_property>
+         <obj_property name="ObjectShortName">mem_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_MEM_i/mem_size" type="array">
+         <obj_property name="ElementShortName">mem_size[1:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_size[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group98" type="group">
+      <obj_property name="label">RISCV_WB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_WB_i/opcode" type="array">
+         <obj_property name="ElementShortName">opcode[6:0]</obj_property>
+         <obj_property name="ObjectShortName">opcode[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_WB_i/data_mem_in" type="array">
+         <obj_property name="ElementShortName">data_mem_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_mem_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_WB_i/alu_out" type="array">
+         <obj_property name="ElementShortName">alu_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_WB_i/pc_plus_4" type="array">
+         <obj_property name="ElementShortName">pc_plus_4[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pc_plus_4[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_WB_i/rd_data" type="array">
+         <obj_property name="ElementShortName">rd_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_WB_i/reg_wr" type="logic">
+         <obj_property name="ElementShortName">reg_wr</obj_property>
+         <obj_property name="ObjectShortName">reg_wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_WB_i/wb_sel" type="array">
+         <obj_property name="ElementShortName">wb_sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">wb_sel[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group347" type="group">
+      <obj_property name="label">RISCV_RegBank</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_RegBank_i/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_RegBank_i/rst_b" type="logic">
+         <obj_property name="ElementShortName">rst_b</obj_property>
+         <obj_property name="ObjectShortName">rst_b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_RegBank_i/ce" type="logic">
+         <obj_property name="ElementShortName">ce</obj_property>
+         <obj_property name="ObjectShortName">ce</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_RegBank_i/reg_wr" type="logic">
+         <obj_property name="ElementShortName">reg_wr</obj_property>
+         <obj_property name="ObjectShortName">reg_wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_RegBank_i/rs1_addr" type="array">
+         <obj_property name="ElementShortName">rs1_addr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs1_addr[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_RegBank_i/rs2_addr" type="array">
+         <obj_property name="ElementShortName">rs2_addr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs2_addr[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_RegBank_i/rd_addr" type="array">
+         <obj_property name="ElementShortName">rd_addr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_addr[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_RegBank_i/rd_data" type="array">
+         <obj_property name="ElementShortName">rd_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_RegBank_i/rs1_data" type="array">
+         <obj_property name="ElementShortName">rs1_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rs1_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_RegBank_i/rs2_data" type="array">
+         <obj_property name="ElementShortName">rs2_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rs2_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_RegBank_i/reg_bank" type="array">
+         <obj_property name="ElementShortName">reg_bank[31:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_bank[31:0][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/singleCycCompTop_TB/uut/singleCycCompAndMem_i/RISCV_Top_i/RISCV_RegBank_i/cmb_reg_bank" type="array">
+         <obj_property name="ElementShortName">cmb_reg_bank[31:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">cmb_reg_bank[31:0][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
