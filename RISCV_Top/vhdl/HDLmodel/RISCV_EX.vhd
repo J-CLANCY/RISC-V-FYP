@@ -36,12 +36,13 @@ signal A 	  	 	: std_logic_vector(31 downto 0); -- First input of the ALU
 signal B 	  	 	: std_logic_vector(31 downto 0); -- Second input of the ALU
 signal alu_op 	 	: std_logic_vector(3 downto 0);  -- Function selector for ALU logic
 signal branch_op 	: std_logic_vector(2 downto 0);  -- Function selector for branch detector
+signal mux_sel      : std_logic_vector(1 downto 0);  -- Input data mux selector
 signal compare_cond : std_logic; 					 -- Signal denoting whether the processor is branching or not
 signal result       : std_logic_vector(31 downto 0); -- Result of the ALU operation
 
 begin
 
-alu_Logic: process(A, B, alu_op, compare_cond) -- Logic containing all ALU functions
+alu_Logic: process(A, B, alu_op, compare_cond, rs2_addr) -- Logic containing all ALU functions
 begin
     result   <= (others => '0'); -- Default assignment
 	
@@ -51,10 +52,13 @@ begin
       when "0010" => result <= A and B; -- AND
       when "0011" => result <= A or B;  -- OR
       when "0100" => result <= A xor B; -- XOR
-      when "0101" => result <= std_logic_vector(shift_left(unsigned(A),to_integer(unsigned(B))));   -- Shift left logical
-      when "0110" => result <= std_logic_vector(shift_right(unsigned(A),to_integer(unsigned(B))));  -- Shift right logical
-      when "0111" => result <= std_logic_vector(rotate_right(unsigned(A),to_integer(unsigned(B)))); -- Shift right arithmetic
-	  when "1000" => -- Set less than
+      when "0101" => result <= std_logic_vector(shift_left(unsigned(A),to_integer(unsigned(rs2_addr))));   -- Shift left logical immediate
+      when "0110" => result <= std_logic_vector(shift_right(unsigned(A),to_integer(unsigned(rs2_addr))));  -- Shift right logical immediate
+      when "0111" => result <= std_logic_vector(shift_right(signed(A),to_integer(unsigned(rs2_addr))));    -- Shift right arithmetic immediate
+      when "1000" => result <= std_logic_vector(shift_left(unsigned(A),to_integer(unsigned(B))));          -- Shift left logical 
+      when "1001" => result <= std_logic_vector(shift_right(unsigned(A),to_integer(unsigned(B))));         -- Shift right logical 
+      when "1010" => result <= std_logic_vector(shift_right(signed(A),to_integer(unsigned(B))));           -- Shift right arithmetic 
+	  when "1011" => -- Set less than
 			case compare_cond is
 				when '0' => null;
 				when '1' => result <= X"00000001";
@@ -111,40 +115,49 @@ begin
 	end case;
 end process;
 
-operand_sel_Logic: process(opcode, rs1_data, rs2_data, immediate, pc_plus_4) -- Selecting the operands to pass to the ALU
+operand_sel_Logic: process(mux_sel, rs1_data, rs2_data, immediate, pc_plus_4) -- Selecting the operands to pass to the ALU
 begin
    A <= (others => '0'); -- Default assignment
    B <= (others => '0');
    
-   case opcode(6 downto 2) is
-        when "01100" => -- Register to register operations
+   case mux_sel is
+        when "00" => -- Register to register operations
             A <= rs1_data;
             B <= rs2_data;
 			
-        when "00000"|"01000"|"11001"|"00100" => -- Register to immediate operations
+        when "01" => -- Register to immediate operations 
             A <= rs1_data;
             B <= immediate;
 			
-        when "00101"|"11011"|"11000" => -- AUIPC, JAL and branch operations
+        when "10" => -- AUIPC, JAL and branch operations 
             A <= pc_plus_4;
             B <= immediate;
 			
-		when "01101" => -- LUI
+		when "11" => -- LUI
 			B <= immediate;
 			
         when others => null;
    end case; 
 end process;
 
-operation_decode_Logic: process(opcode, f3, f7) -- Logic to select ALU and branch functions
+function_decode_Logic: process(opcode, f3, f7) -- Logic to select ALU and branch functions
 begin
-	alu_op <= X"0";  -- Addition
+    -- Defaults
+	alu_op <= X"0";     -- Addition
 	branch_op <= "111"; -- No branch
+	mux_sel <= "00";    -- Reg-Reg
 	
 	case opcode(6 downto 2) is
-		when "11011"|"11001" => branch_op <= "110"; -- JAL/JALR
+		when "11011" => -- JAL
+		    branch_op <= "110";
+		    mux_sel <= "10";
+		
+		when "11001" => -- JALR
+		    branch_op <= "110";
+		    mux_sel <= "01"; 
 		
 		when "11000" => -- Branch
+		    mux_sel <= "10";
 			case f3 is
 				when "000" => branch_op <= "000"; -- BEQ
 				when "001" => branch_op <= "001"; -- BNE
@@ -156,13 +169,14 @@ begin
 			end case;
 			
 		when "00100" => -- Register-Immediate Arithmetic/Logic
+		    mux_sel <= "01";
 			case f3 is
 				when "010" => -- SLT
-					alu_op <= "1000";
+					alu_op <= "1011";
 					branch_op <= "010";
 					
 				when "011" => -- SLTU
-					alu_op <= "1000";
+					alu_op <= "1011";
 					branch_op <= "100";
 					
 				when "100" => alu_op <= "0100"; -- XORI
@@ -171,8 +185,8 @@ begin
 				when "001" => alu_op <= "0101"; -- SLLI
 				when "101" => 						  
 					case f7(5) is
-						when '0' => alu_op <= "0111"; -- SRLI
-						when '1' => alu_op <= "0110"; -- SRAI
+						when '0' => alu_op <= "0110"; -- SRLI
+						when '1' => alu_op <= "0111"; -- SRAI
 						when others => null;
 					end case;
 					
@@ -189,26 +203,29 @@ begin
 					end case;
 					
 				when "010" => -- SLT
-					alu_op <= "1000";
+					alu_op <= "1011";
 					branch_op <= "010";
 					
 				when "011" => -- SLTU
-					alu_op <= "1000";
+					alu_op <= "1011";
 					branch_op <= "100";
 					
 				when "100" => alu_op <= "0100"; -- XOR
 				when "110" => alu_op <= "0011"; -- OR
 				when "111" => alu_op <= "0010"; -- AND
-				when "001" => alu_op <= "0101"; -- SLL
-				when "101" => -- SRI
+				when "001" => alu_op <= "1000"; -- SLL
+				when "101" => 
 					case f7(5) is
-						when '0' => alu_op <= "0111"; -- SRL
-						when '1' => alu_op <= "0110"; -- SRA
+						when '0' => alu_op <= "1001"; -- SRL
+						when '1' => alu_op <= "1010"; -- SRA
 						when others => null;
 					end case;
 				when others => null;
 			end case;
 			
+		when "00000"|"01000" => mux_sel <= "01"; -- Load/Store
+		when "01101" => mux_sel <= "11";         -- LUI
+		when "00101" => mux_sel <= "10";         -- AUIPC
 		when others => null;
 	end case;
 end process;

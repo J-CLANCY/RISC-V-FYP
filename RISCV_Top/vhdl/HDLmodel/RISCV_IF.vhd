@@ -41,8 +41,10 @@ program_counter_Reg: process(clk, rst_b) -- Register for the program counter
 begin
     if rst_b = '0' then
         pc_internal <= (others => '0');
-    elsif rising_edge(clk) and ce = '1' and mem_busy = '0' then
-        pc_internal <= npc;
+    elsif rising_edge(clk) then
+        if ce = '1' and mem_busy = '0' then
+            pc_internal <= npc;
+        end if;
     end if;
 end process;  
 

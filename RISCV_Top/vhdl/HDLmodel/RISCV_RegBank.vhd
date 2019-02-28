@@ -43,8 +43,10 @@ state_Reg: process(clk, rst_b) -- State registers for our 32 32-bit registers
 begin
     if rst_b = '0' then
         int_reg_bank <= (others => (others => '0'));
-    elsif rising_edge(clk) and ce = '1' then
-        int_reg_bank <= cmb_reg_bank;
+    elsif rising_edge(clk) then
+        if ce = '1' then
+            int_reg_bank <= cmb_reg_bank;
+        end if;
     end if;
 end process;
 
