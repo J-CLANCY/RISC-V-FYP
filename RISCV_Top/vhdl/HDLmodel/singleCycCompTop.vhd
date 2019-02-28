@@ -26,7 +26,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
-use work.SingleCycCompPackage.all;
+use work.RISCV_Package.ALL;
 
 entity singleCycCompTop is
 Port ( clk :        		in std_logic;						-- system clock strobe

@@ -39,7 +39,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
-use work.SingleCycCompPackage.ALL;
+use work.RISCV_Package.all;
 
 entity dualPortRegBlk128x32WithLoad is
  Port (  clk		: in  std_logic;    					 
@@ -71,7 +71,7 @@ signal XX_loadDat : std_logic_vector(31 downto 0);
 signal XX_datIn   : std_logic_vector(31 downto 0);                      
 signal XX_add     : std_logic_vector( 9 downto 0);                      
 signal XX_wr      : std_logic;   
-signal intP0LoadDat : array128x32Instr;
+signal XX_intP0LoadDat : array128x32Instr;
 
 begin
 
@@ -103,9 +103,9 @@ end process;
 
 process (p0LoadDatIndex, XX_loadDat)
 begin 
- intP0LoadDat <= (others => XX_loadDat); -- default
+ XX_intP0LoadDat <= (others => XX_loadDat); -- default
  if p0LoadDatIndex = "01" then 
-   intP0LoadDat <= (others => X"00000000");
+   XX_intP0LoadDat <= (others => X"00000000");
  end if;
 end process;
 
@@ -115,7 +115,7 @@ begin
     XX_CS <= (others => (others => '0')); 
  elsif clk'event and clk = '1' then
    if XX_load = '1' then 
-     XX_CS <= intP0LoadDat; -- load array
+     XX_CS <= XX_intP0LoadDat; -- load array
    else
     XX_CS <= XX_NS; 
    end if;

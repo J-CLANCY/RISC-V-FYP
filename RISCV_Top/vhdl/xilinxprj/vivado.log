@@ -2,21 +2,44 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Wed Feb 13 10:35:28 2019
-# Process ID: 4664
-# Current directory: C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2404 C:\Users\user\Desktop\Everyhting\College\4th_Year\FYP\RISC-V-FYP\RISCV_Top\RISC-V.xpr
-# Log file: C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vivado.log
-# Journal file: C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top\vivado.jou
+# Start of session at: Wed Feb 20 19:52:16 2019
+# Process ID: 1668
+# Current directory: C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/xilinxprj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13316 C:\f7\vicilab\sample_projects\applications\RISCV_Top\vhdl\xilinxprj\RISCV.xpr
+# Log file: C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/xilinxprj/vivado.log
+# Journal file: C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/xilinxprj\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.xpr
+open_project C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/xilinxprj/RISCV.xpr
+INFO: [Project 1-313] Project file moved from 'C:/JosephClancy/RISCV_FYPmaster/RISCV_Top/vhdl/xilinxprj' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:34 . Memory (MB): peak = 756.844 ; gain = 72.902
-update_compile_order -fileset sources_1
-set_property top RISCV_Top [current_fileset]
-update_compile_order -fileset sources_1
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 715.871 ; gain = 49.770
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Feb 20 19:54:23 2019] Launched synth_1...
+Run output will be captured here: C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/xilinxprj/RISCV.runs/synth_1/runme.log
+export_ip_user_files -of_objects  [get_files C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/HDLmodel/SingleCycCompPackage.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/HDLmodel/arrayPackage.vhd] -no_script -reset -force -quiet
+remove_files  {C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/HDLmodel/SingleCycCompPackage.vhd C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/HDLmodel/arrayPackage.vhd}
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Feb 20 21:12:58 2019] Launched synth_1...
+Run output will be captured here: C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/xilinxprj/RISCV.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Feb 20 21:16:35 2019] Launched synth_1...
+Run output will be captured here: C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/xilinxprj/RISCV.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Feb 20 21:19:52 2019] Launched synth_1...
+Run output will be captured here: C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/xilinxprj/RISCV.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Feb 20 21:23:34 2019] Launched synth_1...
+Run output will be captured here: C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/xilinxprj/RISCV.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 20 21:28:54 2019...

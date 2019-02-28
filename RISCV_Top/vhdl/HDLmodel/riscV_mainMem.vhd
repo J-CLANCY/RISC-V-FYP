@@ -24,7 +24,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
-use work.SingleCycCompPackage.ALL;
+use work.RISCV_Package.all;
 
 -- include component name and signals
 entity riscV_mainMem is
@@ -45,7 +45,7 @@ end riscV_mainMem;
 architecture RTL of riscV_mainMem is
 
 signal count        : integer range 0 to 10;
-signal memReg       : array128x32;	-- memory register !!! CAUTION !!! If you change the size of the memory, you must change initialization of the stack pointer in WritteBack VHDL file
+signal XX_memReg       : array128x32;	-- memory register !!! CAUTION !!! If you change the size of the memory, you must change initialization of the stack pointer in WritteBack VHDL file
 signal releaseWr    : std_logic;        --Writting is done in a 10 clock period time
 signal releaseRd    : std_logic;        --Reading is done in a 8 clock period time
 signal memWrIntern  : std_logic;         --internal memWr, due to the possibility that memWr can be deasserted during the writting process
@@ -153,26 +153,26 @@ end process;
 
 -- synchronous process
 -- Read and writte from/to memory when relasedWr/Rd = 1
-synch_i : process(clk, rst, CE, releaseWr, releaseRd, DInReg, addrReg, memReg)
+synch_i : process(clk, rst, CE, releaseWr, releaseRd, DInReg, addrReg, XX_memReg)
 begin
 	if rst = '1' then
-        memReg <= (others => x"00000000");
+        XX_memReg <= (others => x"00000000");
         Dout <= x"00000000";
 	elsif rising_edge(clk) then	
 	   if CE = '1' then
 	       if releaseWr = '1' then
-	            memReg(to_integer(to_unsigned(to_integer(signed(addrReg))/4,7))) <= DInReg;
+	            XX_memReg(to_integer(to_unsigned(to_integer(signed(addrReg))/4,7))) <= DInReg;
 	       elsif releaseRd = '1' then
-                DOut <= memReg(to_integer(to_unsigned(to_integer(signed(addrReg))/4,7)));
+                DOut <= XX_memReg(to_integer(to_unsigned(to_integer(signed(addrReg))/4,7)));
 				
 				case memSize is
 					when "00" => 
 						DOut(31 downto 8) <= (others => '0');
-						DOut(7 downto 0) <= memReg(to_integer(to_unsigned(to_integer(signed(addrReg))/4,7)))(7 downto 0);
+						DOut(7 downto 0) <= XX_memReg(to_integer(to_unsigned(to_integer(signed(addrReg))/4,7)))(7 downto 0);
 						
 					when "01" => 
 						DOut(31 downto 16) <= (others => '0');
-						DOut(15 downto 0) <= memReg(to_integer(to_unsigned(to_integer(signed(addrReg))/4,7)))(15 downto 0);
+						DOut(15 downto 0) <= XX_memReg(to_integer(to_unsigned(to_integer(signed(addrReg))/4,7)))(15 downto 0);
 						
 					when others => null;
 				end case;

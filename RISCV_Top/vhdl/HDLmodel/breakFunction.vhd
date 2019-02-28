@@ -58,7 +58,6 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.numeric_std.all;
 use work.RISCV_Package.all;
-use work.arrayPackage.all;
 
 -- FM: consider using system clk without needing SCC step control
 -- for writing values to breakpoint ctrlReg, and for loading 0 in the breakpoint ctrlReg
@@ -69,8 +68,9 @@ Port ( clk : 			     in std_logic;                         -- system clock strob
 	   enableBreakpoints :   in std_logic;
 	   clrBreakEvent : 		 in std_logic;                         -- assert on run/debug start or on re-rn after a breakpoint detection
 
-	   PC: 	           		 in std_logic_vector(31 downto 0);     -- current PC, R 
-	   R:  	           		 in regType;	     	               -- 31 x 32-bit registers 
+	   -- FM PC is 12-bits 
+	   PC: 	           		 in std_logic_vector(11 downto 0);     -- current PC, R 
+	   R:  	           		 in RISCV_regType;	     	               -- 31 x 32-bit registers 
 
 	   breakAdd :            in std_logic_vector(4 downto 0);      -- register array address
 	   breakWr :             in std_logic;                         -- register array wr
@@ -94,7 +94,7 @@ component ctrlRegBlk31x33 is
 end component;
 
 signal XX_breakArray               : array31x33;                                                    
-signal XX_PCBreakValueArray 	   : regType8x12                  := (others => X"000");  -- 8 x 12-bit array
+signal XX_PCBreakValueArray 	   : RISCV_regType8x12                  := (others => X"000");  -- 8 x 12-bit array
 signal XX_PCBreakValueArrayEnable  : std_logic_vector(7 downto 0) := (others => '0');
 
 signal XX_RBreakValueArray 	       : array31x33                    := (others => '0' & X"00000000"); -- 8 x 16-bit array
@@ -103,7 +103,7 @@ signal XX_RBreakValueEnable        : std_logic_vector(30 downto 0) := (others =>
 signal breakEvent 		           : std_logic                    := '0';                 -- synchronously asserted on occurrence of any breakpoint
 
 -- registered R values, used to ensure that R value changes as part of an R breakpoint detection
-signal XX_dR                       : regType;  
+signal XX_dR                       : RISCV_regType;  
 signal XX_dPC                      : std_logic_vector(11 downto 0); -- registered PC value
 
 -- combinational breakpoint flags 
