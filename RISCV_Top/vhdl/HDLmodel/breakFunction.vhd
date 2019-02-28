@@ -69,7 +69,7 @@ Port ( clk : 			     in std_logic;                         -- system clock strob
 	   clrBreakEvent : 		 in std_logic;                         -- assert on run/debug start or on re-rn after a breakpoint detection
 
 	   -- FM PC is 12-bits 
-	   PC: 	           		 in std_logic_vector(11 downto 0);     -- current PC, R 
+	   PC: 	           		 in std_logic_vector(31 downto 0);     -- current PC, R 
 	   R:  	           		 in RISCV_regType;	     	               -- 31 x 32-bit registers 
 
 	   breakAdd :            in std_logic_vector(4 downto 0);      -- register array address

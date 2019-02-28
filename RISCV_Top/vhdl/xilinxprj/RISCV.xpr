@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/xilinxprj/RISCV.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/xilinxprj/RISCV.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="e699f31da292480ca971de3ab28ff09c"/>

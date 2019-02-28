@@ -244,7 +244,7 @@ component breakFunction is
 	   enableBreakpoints    : in std_logic;
 	   clrBreakEvent        : in std_logic;                         -- assert on run/debug start or on re-rn after a breakpoint detection
 
-	   PC                   : in std_logic_vector(11 downto 0);     -- current PC, R, SFR values
+	   PC                   : in std_logic_vector(31 downto 0);     -- current PC, R, SFR values
 	   R  	           		: in RISCV_regType;	     	                -- 8 x 16-bit registers 
 
 	   breakAdd             : in std_logic_vector(4 downto 0);      -- register array address

@@ -80,7 +80,7 @@ signal WB_reg_wr  : std_logic;
 -- RegBank originating signals
 signal RegBank_rs1_data : std_logic_vector(31 downto 0);
 signal RegBank_rs2_data : std_logic_vector(31 downto 0);
-signal RegBank_reg_bank : regType;
+signal RegBank_reg_bank : RISCV_regType;
 
 -- Break Function signals
 signal rst : std_logic;

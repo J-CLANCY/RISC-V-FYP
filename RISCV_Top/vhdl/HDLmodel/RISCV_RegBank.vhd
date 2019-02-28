@@ -27,13 +27,13 @@ entity RISCV_RegBank is
         rd_data  : in  std_logic_vector(31 downto 0);
         rs1_data : out std_logic_vector(31 downto 0);
         rs2_data : out std_logic_vector(31 downto 0);
-        reg_bank : out regType);
+        reg_bank : out RISCV_regType);
 end RISCV_RegBank;
 
 architecture RTL of RISCV_RegBank is
 
-signal int_reg_bank : regType;
-signal cmb_reg_bank : regType;
+signal int_reg_bank : RISCV_regType;
+signal cmb_reg_bank : RISCV_regType;
 
 begin
 
@@ -50,7 +50,7 @@ begin
     end if;
 end process;
 
-wr_Logic: process(reg_wr, rd_addr, rd_data) -- The write logic for our registers
+wr_Logic: process(reg_wr, rd_addr, rd_data, int_reg_bank) -- The write logic for our registers
 begin
     cmb_reg_bank <= int_reg_bank;
 	
@@ -59,7 +59,7 @@ begin
     end if;
 end process;
 
-rs1_data_Assign: process(rs1_addr) -- First operand read logic
+rs1_data_Assign: process(rs1_addr, int_reg_bank) -- First operand read logic
 begin
     if rs1_addr = "00000" then
         rs1_data <= (others => '0');

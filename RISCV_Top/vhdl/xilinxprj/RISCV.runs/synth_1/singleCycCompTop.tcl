@@ -22,27 +22,27 @@ create_project -in_memory -part xc7z020clg400-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/xilinxprj/RISCV.cache/wt [current_project]
-set_property parent.project_path C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/xilinxprj/RISCV.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/xilinxprj/RISCV.cache/wt [current_project]
+set_property parent.project_path C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/xilinxprj/RISCV.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo c:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/xilinxprj/RISCV.cache/ip [current_project]
+set_property ip_output_repo c:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/xilinxprj/RISCV.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd
-  C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/HDLmodel/RISCV_ID.vhd
-  C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/HDLmodel/RISCV_IF.vhd
-  C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/HDLmodel/RISCV_MEM.vhd
-  C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/HDLmodel/RISCV_Package.vhd
-  C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/HDLmodel/RISCV_RegBank.vhd
-  C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/HDLmodel/RISCV_WB.vhd
-  C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/HDLmodel/RISCV_Top.vhd
-  C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/HDLmodel/breakFunction.vhd
-  C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/HDLmodel/singleCycCompTop.vhd
-  C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/HDLmodel/singleCycCompAndMem.vhd
-  C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/HDLmodel/dualPortRegBlk128x32WithLoad.vhd
-  C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/HDLmodel/singleShot.vhd
-  C:/f7/vicilab/sample_projects/applications/RISCV_Top/vhdl/HDLmodel/riscV_mainMem.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_ID.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_IF.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_MEM.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_Package.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_RegBank.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_WB.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_Top.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/breakFunction.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/singleCycCompTop.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/singleCycCompAndMem.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/dualPortRegBlk128x32WithLoad.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/singleShot.vhd
+  C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/riscV_mainMem.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
