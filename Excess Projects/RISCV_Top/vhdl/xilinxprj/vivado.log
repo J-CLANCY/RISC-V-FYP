@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Feb 13 10:35:28 2019
+# Process ID: 4664
+# Current directory: C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2404 C:\Users\user\Desktop\Everyhting\College\4th_Year\FYP\RISC-V-FYP\RISCV_Top\RISC-V.xpr
+# Log file: C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vivado.log
+# Journal file: C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/RISC-V.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:34 . Memory (MB): peak = 756.844 ; gain = 72.902
+update_compile_order -fileset sources_1
+set_property top RISCV_Top [current_fileset]
+update_compile_order -fileset sources_1

@@ -1,0 +1,31 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../RISC-V.srcs/sources_1/ip/data_memory/data_memory_sim_netlist.vhdl" \
+"../../../../RISC-V.srcs/sources_1/ip/instruction_memory/instruction_memory_sim_netlist.vhdl" \
+"../../../../../HDLmodel/RISCV_EX.vhd" \
+"../../../../../HDLmodel/RISCV_ID.vhd" \
+"../../../../../HDLmodel/RISCV_IF.vhd" \
+"../../../../../HDLmodel/RISCV_MEM.vhd" \
+"../../../../../HDLmodel/RISCV_Package.vhd" \
+"../../../../../HDLmodel/RISCV_RegBank.vhd" \
+"../../../../../HDLmodel/RISCV_WB.vhd" \
+"../../../../../HDLmodel/RISCV_Top.vhd" \
+"../../../../../HDLmodel/arrayPackage.vhd" \
+"../../../../../HDLmodel/breakFunction.vhd" \
+"../../../../../HDLmodel/SingleCycCompPackage.vhd" \
+"../../../../../HDLmodel/singleCycCompTop.vhd" \
+"../../../../../HDLmodel/singleCycCompAndMem.vhd" \
+"../../../../../HDLmodel/dualPortRegBlk128x32WithLoad.vhd" \
+"../../../../../HDLmodel/singleShot.vhd" \
+"../../../../../HDLmodel/riscV_mainMem.vhd" \
+"../../../../../HDLmodel/testbench/RISCV_EX_TB.vhd" \
+"../../../../../HDLmodel/testbench/RISCV_ID_TB.vhd" \
+"../../../../../HDLmodel/testbench/RISCV_IF_TB.vhd" \
+"../../../../../HDLmodel/testbench/RISCV_MEM_TB.vhd" \
+"../../../../../HDLmodel/testbench/RISCV_RegBank_TB.vhd" \
+"../../../../../HDLmodel/testbench/RISCV_Top_TB_BRAM.vhd" \
+"../../../../../HDLmodel/testbench/RISCV_WB_TB.vhd" \
+"../../../../../HDLmodel/testbench/singleCycCompTop_TB.vhd" \
+
+# Do not sort compile order
+nosort

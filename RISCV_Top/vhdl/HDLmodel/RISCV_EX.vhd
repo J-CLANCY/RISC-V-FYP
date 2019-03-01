@@ -25,6 +25,7 @@ entity RISCV_EX is
         f7          : in  std_logic_vector(6 downto 0);
         opcode      : in  std_logic_vector(6 downto 0);
         immediate   : in  std_logic_vector(31 downto 0);
+        pc          : in  std_logic_vector(31 downto 0);
         pc_plus_4   : in  std_logic_vector(31 downto 0);
         alu_out     : out std_logic_vector(31 downto 0);
         branch_out  : out std_logic_vector(31 downto 0));
@@ -115,7 +116,7 @@ begin
 	end case;
 end process;
 
-operand_sel_Logic: process(mux_sel, rs1_data, rs2_data, immediate, pc_plus_4) -- Selecting the operands to pass to the ALU
+operand_sel_Logic: process(mux_sel, rs1_data, rs2_data, immediate, pc) -- Selecting the operands to pass to the ALU
 begin
    A <= (others => '0'); -- Default assignment
    B <= (others => '0');
@@ -130,7 +131,7 @@ begin
             B <= immediate;
 			
         when "10" => -- AUIPC, JAL and branch operations 
-            A <= pc_plus_4;
+            A <= pc;
             B <= immediate;
 			
 		when "11" => -- LUI

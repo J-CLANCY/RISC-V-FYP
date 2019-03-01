@@ -83,13 +83,13 @@ signal RegBank_rs2_data : std_logic_vector(31 downto 0);
 signal RegBank_reg_bank : RISCV_regType;
 
 -- Break Function signals
-signal rst : std_logic;
+signal rstBreak : std_logic;
 
 begin
 
 data_addr_Assign:  data_addr <= EX_alu_out; -- Tying the ALU output that generates data memory addresses to the output port
 instr_addr_Assign: instr_addr <= IF_pc;     -- Tying the current program counter to the instr_addr output port
-rst_Invert:        rst <= not rst_b;        -- Inverting rst_b for the break function module
+rst_Invert:        rstBreak <= not rst_b;        -- Inverting rst_b for the break function module
 
 RISCV_IF_i: RISCV_IF 
   Port map(
@@ -123,6 +123,7 @@ RISCV_EX_i: RISCV_EX
         f7         => ID_f7,
         opcode     => ID_opcode,
         immediate  => ID_immediate,
+        pc         => IF_pc,
         pc_plus_4  => IF_pc_plus_4,
         alu_out    => EX_alu_out,
         branch_out => EX_branch_out
@@ -169,7 +170,7 @@ RISCV_RegBank_i: RISCV_RegBank
 breakFunction_i: breakFunction
     Port map  (
           clk               => clk,
-          rst               => rst, 
+          rst               => rstBreak, 
           clrAllBreakpoints => clrAllBreakpoints,
           enableBreakpoints => enableBreakpoints,
           clrBreakEvent     => clrBreakEvent,

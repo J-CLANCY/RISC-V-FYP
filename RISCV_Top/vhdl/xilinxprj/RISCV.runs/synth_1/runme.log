@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7592 
+INFO: Helper process launched with PID 13696 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 357.621 ; gain = 99.594
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 357.262 ; gain = 98.598
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'singleCycCompTop' [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/singleCycCompTop.vhd:84]
 INFO: [Synth 8-3491] module 'singleShot' declared at 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/singleShot.vhd:24' bound to instance 'singleShotStep_i' of component 'singleShot' [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/singleCycCompTop.vhd:98]
@@ -41,28 +41,27 @@ INFO: [Synth 8-3491] module 'RISCV_ID' declared at 'C:/Users/user/Desktop/Everyh
 INFO: [Synth 8-638] synthesizing module 'RISCV_ID' [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_ID.vhd:30]
 INFO: [Synth 8-256] done synthesizing module 'RISCV_ID' (5#1) [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_ID.vhd:30]
 INFO: [Synth 8-3491] module 'RISCV_EX' declared at 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd:19' bound to instance 'RISCV_EX_i' of component 'RISCV_EX' [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_Top.vhd:117]
-INFO: [Synth 8-638] synthesizing module 'RISCV_EX' [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd:33]
-INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd:62]
-INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd:111]
-INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd:123]
-INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd:187]
-INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd:197]
-INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd:199]
-INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd:218]
-INFO: [Synth 8-256] done synthesizing module 'RISCV_EX' (6#1) [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd:33]
-INFO: [Synth 8-3491] module 'RISCV_MEM' declared at 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_MEM.vhd:18' bound to instance 'RISCV_MEM_i' of component 'RISCV_MEM' [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_Top.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'RISCV_EX' [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd:34]
+INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd:63]
+INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd:112]
+INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd:188]
+INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd:198]
+INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd:200]
+INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd:219]
+INFO: [Synth 8-256] done synthesizing module 'RISCV_EX' (6#1) [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_EX.vhd:34]
+INFO: [Synth 8-3491] module 'RISCV_MEM' declared at 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_MEM.vhd:18' bound to instance 'RISCV_MEM_i' of component 'RISCV_MEM' [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_Top.vhd:132]
 INFO: [Synth 8-638] synthesizing module 'RISCV_MEM' [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_MEM.vhd:31]
 INFO: [Synth 8-256] done synthesizing module 'RISCV_MEM' (7#1) [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_MEM.vhd:31]
-INFO: [Synth 8-3491] module 'RISCV_WB' declared at 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_WB.vhd:18' bound to instance 'RISCV_WB_i' of component 'RISCV_WB' [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_Top.vhd:144]
+INFO: [Synth 8-3491] module 'RISCV_WB' declared at 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_WB.vhd:18' bound to instance 'RISCV_WB_i' of component 'RISCV_WB' [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_Top.vhd:145]
 INFO: [Synth 8-638] synthesizing module 'RISCV_WB' [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_WB.vhd:28]
 INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_WB.vhd:58]
 INFO: [Synth 8-256] done synthesizing module 'RISCV_WB' (8#1) [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_WB.vhd:28]
-INFO: [Synth 8-3491] module 'RISCV_RegBank' declared at 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_RegBank.vhd:18' bound to instance 'RISCV_RegBank_i' of component 'RISCV_RegBank' [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_Top.vhd:154]
+INFO: [Synth 8-3491] module 'RISCV_RegBank' declared at 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_RegBank.vhd:18' bound to instance 'RISCV_RegBank_i' of component 'RISCV_RegBank' [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_Top.vhd:155]
 INFO: [Synth 8-638] synthesizing module 'RISCV_RegBank' [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_RegBank.vhd:33]
-WARNING: [Synth 8-614] signal 'int_reg_bank' is read in the process but is not in the sensitivity list [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_RegBank.vhd:62]
 WARNING: [Synth 8-614] signal 'int_reg_bank' is read in the process but is not in the sensitivity list [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_RegBank.vhd:71]
 INFO: [Synth 8-256] done synthesizing module 'RISCV_RegBank' (9#1) [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_RegBank.vhd:33]
-INFO: [Synth 8-3491] module 'breakFunction' declared at 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/breakFunction.vhd:64' bound to instance 'breakFunction_i' of component 'breakFunction' [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_Top.vhd:169]
+INFO: [Synth 8-3491] module 'breakFunction' declared at 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/breakFunction.vhd:64' bound to instance 'breakFunction_i' of component 'breakFunction' [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_Top.vhd:170]
 INFO: [Synth 8-638] synthesizing module 'breakFunction' [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/breakFunction.vhd:83]
 INFO: [Synth 8-256] done synthesizing module 'breakFunction' (10#1) [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/breakFunction.vhd:83]
 INFO: [Synth 8-256] done synthesizing module 'RISCV_Top' (11#1) [C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/RISCV_Top.vhd:54]
@@ -176,17 +175,17 @@ WARNING: [Synth 8-3331] design breakFunction has unconnected port R[30][2]
 WARNING: [Synth 8-3331] design breakFunction has unconnected port R[30][1]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 436.652 ; gain = 178.625
+Finished Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 436.656 ; gain = 177.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 436.652 ; gain = 178.625
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 436.656 ; gain = 177.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 436.652 ; gain = 178.625
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 436.656 ; gain = 177.992
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-5546] ROM "XX_NS_reg[0]" won't be mapped to RAM because it is too sparse
@@ -293,7 +292,7 @@ INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instan
 INFO: [Synth 8-5587] ROM size for "mux_sel" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5544] ROM "mem_size" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 522.559 ; gain = 264.531
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 516.469 ; gain = 257.805
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -556,7 +555,7 @@ WARNING: [Synth 8-3332] Sequential element (XX_memReg_reg[109][29]) is unused an
 WARNING: [Synth 8-3332] Sequential element (XX_memReg_reg[109][28]) is unused and will be removed from module riscV_mainMem.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:08:13 ; elapsed = 00:08:36 . Memory (MB): peak = 771.953 ; gain = 513.926
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:38 ; elapsed = 00:07:53 . Memory (MB): peak = 764.961 ; gain = 506.297
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -569,7 +568,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:11:04 ; elapsed = 00:11:34 . Memory (MB): peak = 771.953 ; gain = 513.926
+Finished Timing Optimization : Time (s): cpu = 00:10:18 ; elapsed = 00:10:42 . Memory (MB): peak = 764.961 ; gain = 506.297
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -581,7 +580,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:12:21 ; elapsed = 00:12:55 . Memory (MB): peak = 771.953 ; gain = 513.926
+Finished Technology Mapping : Time (s): cpu = 00:11:36 ; elapsed = 00:12:04 . Memory (MB): peak = 764.961 ; gain = 506.297
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -605,7 +604,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:12:28 ; elapsed = 00:13:03 . Memory (MB): peak = 771.953 ; gain = 513.926
+Finished IO Insertion : Time (s): cpu = 00:11:44 ; elapsed = 00:12:13 . Memory (MB): peak = 764.961 ; gain = 506.297
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -618,7 +617,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:12:28 ; elapsed = 00:13:03 . Memory (MB): peak = 771.953 ; gain = 513.926
+Finished Renaming Generated Instances : Time (s): cpu = 00:11:44 ; elapsed = 00:12:13 . Memory (MB): peak = 764.961 ; gain = 506.297
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -630,25 +629,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:12:30 ; elapsed = 00:13:05 . Memory (MB): peak = 771.953 ; gain = 513.926
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:11:46 ; elapsed = 00:12:15 . Memory (MB): peak = 764.961 ; gain = 506.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:12:31 ; elapsed = 00:13:06 . Memory (MB): peak = 771.953 ; gain = 513.926
+Finished Renaming Generated Ports : Time (s): cpu = 00:11:46 ; elapsed = 00:12:15 . Memory (MB): peak = 764.961 ; gain = 506.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:12:31 ; elapsed = 00:13:06 . Memory (MB): peak = 771.953 ; gain = 513.926
+Finished Handling Custom Attributes : Time (s): cpu = 00:11:47 ; elapsed = 00:12:16 . Memory (MB): peak = 764.961 ; gain = 506.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:12:32 ; elapsed = 00:13:07 . Memory (MB): peak = 771.953 ; gain = 513.926
+Finished Renaming Generated Nets : Time (s): cpu = 00:11:47 ; elapsed = 00:12:16 . Memory (MB): peak = 764.961 ; gain = 506.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -666,15 +665,15 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |    42|
-|3     |LUT1   |    42|
-|4     |LUT2   |   183|
-|5     |LUT3   |   172|
-|6     |LUT4   |   382|
-|7     |LUT5   |   454|
-|8     |LUT6   |  3763|
-|9     |MUXF7  |  1293|
+|3     |LUT1   |    56|
+|4     |LUT2   |   172|
+|5     |LUT3   |   164|
+|6     |LUT4   |   387|
+|7     |LUT5   |   445|
+|8     |LUT6   |  3772|
+|9     |MUXF7  |  1296|
 |10    |MUXF8  |   535|
-|11    |FDCE   |  2128|
+|11    |FDCE   |  2126|
 |12    |FDRE   |  4098|
 |13    |IBUF   |   113|
 |14    |OBUF   |    66|
@@ -685,36 +684,36 @@ Report Instance Areas:
 +------+------------------------+-----------------------------+------+
 |      |Instance                |Module                       |Cells |
 +------+------------------------+-----------------------------+------+
-|1     |top                     |                             | 13881|
-|2     |  singleCycCompAndMem_i |singleCycCompAndMem          | 13089|
-|3     |    RISCV_Top_i         |RISCV_Top                    |  2507|
-|4     |      RISCV_IF_i        |RISCV_IF                     |   253|
-|5     |      RISCV_RegBank_i   |RISCV_RegBank                |  2254|
-|6     |    instrMemArray_i     |dualPortRegBlk128x32WithLoad |  8766|
-|7     |    mainMemory_i        |riscV_mainMem                |  1783|
+|1     |top                     |                             | 13882|
+|2     |  singleCycCompAndMem_i |singleCycCompAndMem          | 13090|
+|3     |    RISCV_Top_i         |RISCV_Top                    |  2503|
+|4     |      RISCV_IF_i        |RISCV_IF                     |   245|
+|5     |      RISCV_RegBank_i   |RISCV_RegBank                |  2258|
+|6     |    instrMemArray_i     |dualPortRegBlk128x32WithLoad |  8772|
+|7     |    mainMemory_i        |riscV_mainMem                |  1782|
 |8     |  singleShotStep_i      |singleShot                   |     3|
 +------+------------------------+-----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:12:32 ; elapsed = 00:13:07 . Memory (MB): peak = 771.953 ; gain = 513.926
+Finished Writing Synthesis Report : Time (s): cpu = 00:11:47 ; elapsed = 00:12:16 . Memory (MB): peak = 764.961 ; gain = 506.297
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 5785 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:12:32 ; elapsed = 00:13:07 . Memory (MB): peak = 771.953 ; gain = 513.926
-Synthesis Optimization Complete : Time (s): cpu = 00:12:32 ; elapsed = 00:13:07 . Memory (MB): peak = 771.953 ; gain = 513.926
+Synthesis finished with 0 errors, 0 critical warnings and 5784 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:11:47 ; elapsed = 00:12:16 . Memory (MB): peak = 764.961 ; gain = 506.297
+Synthesis Optimization Complete : Time (s): cpu = 00:11:47 ; elapsed = 00:12:16 . Memory (MB): peak = 764.961 ; gain = 506.297
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1983 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-17] Analyzing 1986 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-161 Infos, 209 Warnings, 0 Critical Warnings and 0 Errors encountered.
+161 Infos, 208 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:12:51 ; elapsed = 00:13:34 . Memory (MB): peak = 771.953 ; gain = 526.891
+synth_design: Time (s): cpu = 00:12:07 ; elapsed = 00:12:45 . Memory (MB): peak = 764.961 ; gain = 519.117
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/xilinxprj/RISCV.runs/synth_1/singleCycCompTop.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 771.953 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 764.961 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file singleCycCompTop_utilization_synth.rpt -pb singleCycCompTop_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.642 . Memory (MB): peak = 771.953 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Feb 28 19:55:05 2019...
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.598 . Memory (MB): peak = 764.961 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  1 13:02:33 2019...

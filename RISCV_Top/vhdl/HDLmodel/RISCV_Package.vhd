@@ -492,6 +492,7 @@ component RISCV_EX is
         f7          : in  std_logic_vector(6 downto 0);
         opcode      : in  std_logic_vector(6 downto 0);
         immediate   : in  std_logic_vector(31 downto 0);
+        pc          : in  std_logic_vector(31 downto 0);
         pc_plus_4   : in  std_logic_vector(31 downto 0);
         alu_out     : out std_logic_vector(31 downto 0);
         branch_out  : out std_logic_vector(31 downto 0));

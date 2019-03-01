@@ -6,7 +6,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 use ieee.numeric_std.all;
 USE ieee.std_logic_textio.all; -- necessary when using fileIO
 USE std.textio.all;	 
-use work.SingleCycCompPackage.all;
+use work.RISCV_Package.all;
 
 ENTITY singleCycCompTop_TB IS END singleCycCompTop_TB;
 
@@ -112,8 +112,8 @@ constant clkPeriod   : time := 20 ns;	      -- 50MHz clk
 --Outputs
 signal endOfSim :        boolean := false;
 signal instrArray: array128x32 := 	 
- (X"ff010113", X"00100793", X"00f12623", X"00200793", X"00f12423", X"00012223", X"00c12703", X"00812783", 
-  X"00f707b3", X"00f12223", X"00412783", X"00078513", X"01010113", X"00008067", X"00000000", X"00000000",
+ (X"00108093", X"ffdff06f", X"00000000", X"00000000", X"00000000", X"00000000", X"00000000", X"00000000",
+  X"00000000", X"00000000", X"00000000", X"00000000", X"00000000", X"00000000", X"00000000", X"00000000",
   X"00000000", X"00000000", X"00000000", X"00000000", X"00000000", X"00000000", X"00000000", X"00000000",
   X"00000000", X"00000000", X"00000000", X"00000000", X"00000000", X"00000000", X"00000000", X"00000000",
   X"00000000", X"00000000", X"00000000", X"00000000", X"00000000", X"00000000", X"00000000", X"00000000",
