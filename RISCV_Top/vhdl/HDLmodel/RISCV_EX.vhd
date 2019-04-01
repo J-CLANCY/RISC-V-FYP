@@ -40,9 +40,13 @@ signal branch_op 	: std_logic_vector(2 downto 0);  -- Function selector for bran
 signal mux_sel      : std_logic_vector(1 downto 0);  -- Input data mux selector
 signal compare_cond : std_logic; 					 -- Signal denoting whether the processor is branching or not
 signal result       : std_logic_vector(31 downto 0); -- Result of the ALU operation
+signal sgnA 	  	: std_logic_vector(31 downto 0); -- temporary
+signal sgnB 	  	: std_logic_vector(31 downto 0); -- temporary
 
 begin
 
+sgnA <= std_logic_vector(signed(A));
+sgnB <= std_logic_vector(signed(B));
 alu_Logic: process(A, B, alu_op, compare_cond, rs2_addr) -- Logic containing all ALU functions
 begin
     result   <= (others => '0'); -- Default assignment

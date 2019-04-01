@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1552654083">
+  <File Type="PA-TCL" Name="singleCycCompTop.tcl"/>
+  <File Type="BITSTR-BMM" Name="singleCycCompTop_bd.bmm"/>
+  <File Type="REPORTS-TCL" Name="singleCycCompTop_reports.tcl"/>
+  <File Type="OPT-DCP" Name="singleCycCompTop_opt.dcp"/>
+  <File Type="OPT-DRC" Name="singleCycCompTop_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="singleCycCompTop.hwdef"/>
+  <File Type="PWROPT-DCP" Name="singleCycCompTop_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="singleCycCompTop_placed.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="singleCycCompTop_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="singleCycCompTop.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="singleCycCompTop_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="singleCycCompTop.bin"/>
+  <File Type="PHYSOPT-DCP" Name="singleCycCompTop_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="singleCycCompTop.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="singleCycCompTop_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="singleCycCompTop_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="singleCycCompTop_routed_bb.dcp"/>
+  <File Type="BITSTR-LTX" Name="singleCycCompTop.ltx"/>
+  <File Type="BITSTR-MMI" Name="singleCycCompTop.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="singleCycCompTop.sysdef"/>
+  <File Type="ROUTE-TIMING-PB" Name="singleCycCompTop_timing_summary_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="singleCycCompTop_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="singleCycCompTop_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="singleCycCompTop.bit"/>
+  <File Type="BITSTR-RBT" Name="singleCycCompTop.rbt"/>
+  <File Type="BITSTR-NKY" Name="singleCycCompTop.nky"/>
+  <File Type="BG-DRC" Name="singleCycCompTop.drc"/>
+  <File Type="RDI-RDI" Name="singleCycCompTop.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../HDLmodel/RISCV_EX.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HDLmodel/RISCV_ID.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HDLmodel/RISCV_IF.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HDLmodel/RISCV_MEM.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HDLmodel/RISCV_Package.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HDLmodel/RISCV_RegBank.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HDLmodel/RISCV_WB.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HDLmodel/RISCV_Top.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HDLmodel/breakFunction.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HDLmodel/singleCycCompTop.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HDLmodel/singleCycCompAndMem.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HDLmodel/dualPortRegBlk128x32WithLoad.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HDLmodel/singleShot.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HDLmodel/riscV_mainMem.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="singleCycCompTop"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
