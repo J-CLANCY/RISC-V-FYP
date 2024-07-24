@@ -3,8 +3,8 @@
 
 """
 Description : This script generate codes lines that can be inserted into vivado test bench
-Author : Arthur Beretta
-Date : 05/07/2018
+Author : Joseph Clancy
+Date : 12/11/2018
 Change History: Initial version
 
 Long description : This script :
