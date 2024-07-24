@@ -35,7 +35,7 @@ and embedded application development by taking advantage of the new open-source 
 
 The modularity afforded by the use of a 5-stage architecture allows each stage of the architecture can be treated separately. The implementation of these modules can be swapped by alternate user designs without much interference with other aspects of the processor core. For example, the Arithmetic Logic Unit (ALU) can be implemented in many ways, resulting in varying levels of performance when executing most if not all instructions. This modular facet allows students to explore, experiment with and analyse different implementations of the components contained within a processor.
 
-![Figure 1 - Bachelor's Thesis Project Overview](/Documentation/Diagrams/FYP_Context.png)
+![Figure 1 - Bachelor's Thesis Project Overview](/Documentation/Diagrams/FYP_Context.png "Figure 1 - Bachelor's Thesis Project Overview")
 
 ## References
 [1] Morgan, F. et al. (2022). RISC-V Online Tutor. In: Auer, M.E., Bhimavaram, K.R., Yue, XG. (eds) Online Engineering and Society 4.0. REV 2021. Lecture Notes in Networks and Systems, vol 298. Springer, Cham. https://doi.org/10.1007/978-3-030-82529-4_14
