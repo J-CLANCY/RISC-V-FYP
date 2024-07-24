@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#Author : Arthur Beretta
+#Author : Joseph Clancy
 #Description : This script generate every file needed to insert code into the riscV compiler from assembly code
 
 ASSEMBLY=$1
