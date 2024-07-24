@@ -4,6 +4,7 @@ This repository accompanies my Bachelor's thesis (written in LaTeX) which is acc
 
 ## Project Structure
 
+```
 ├── __Documentation__ => Contains documentation for this project.  
 │    ├── __Diagrams__ => Diagrams created for thesis document.  
 │    ├── __FYP_Thesis_Joseph_Clancy.pdf__ => Bachelor's thesis document.  
@@ -19,6 +20,7 @@ This repository accompanies my Bachelor's thesis (written in LaTeX) which is acc
 │    ├── __hex_to_TB.py__ => Converts RISC-V toolchain hex output into a usable format for VHDL testbench.  
 │    ├── __hex_to_viciMacro.py__ => Converts RISC-V toolchain hex output into a usable format for the ViciLogic platform.  
 │    ├── __little_to_big.py__ => Converts from little to big-endian.  
+```
 
 ## RISC-V Overview
 
