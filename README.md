@@ -1,9 +1,3 @@
-RISC-V_Top:
-  -> Contains the Xilinx project, VHDL Modules and test benches associated with the FYP
-
-Documentation:
-  -> Contains all specifications, guides and images associated with the FYP
-
 # Bachelor's Thesis (RISC-V Teaching Tool)
 
 This repository accompanies my Bachelor's thesis (written in LaTeX) which is accessible in the _Documentation_ folder. This project aimed to augment and update the existing course content for 4th-year Electronic Engineering students at the University of Galway on computer architecture, digital design and embedded programming. Specifically, this project is intended to replace an existing custom Complex Instruction Set Computing (CISC) architecture single-cycle computer. The RISC-V Instruction Set Architecture (ISA) was chosen as it is open source and at the time (Summer 2019) the initial specifications from the RISC-V Foundation were being ratified. This project was built on an existing education framework in use at the University of Galway, known as [ViciLogic](https://ieeexplore.ieee.org/document/7058191). Additionally, this project contributed to a conference publication entitled [RISC-V Online Tutor](http://dx.doi.org/10.1007/978-3-030-82529-4_14)[1].
