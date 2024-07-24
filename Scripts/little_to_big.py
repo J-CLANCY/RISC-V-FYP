@@ -4,8 +4,8 @@
 """
 Description : This script transform little endian code to big endian
 Usage : ./little_to_big.py input_file output_file
-Author : Arthur Beretta
-Date : 05/07/2018
+Author : Joseph Clancy
+Date : 12/11/2018
 Change History: Initial version
 
 Long description : This script :
