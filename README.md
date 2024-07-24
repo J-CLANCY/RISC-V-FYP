@@ -4,21 +4,21 @@ This repository accompanies my Bachelor's thesis (written in LaTeX) which is acc
 
 ## Project Structure
 
-|--- __Documentation__ => Contains documentation for this project.
-|    |--- __Diagrams__ => Diagrams created for thesis document.
-|    |--- __FYP_Thesis_Joseph_Clancy.pdf__ => Bachelor's thesis document.
-|    |--- __RISC-V Compiler Installation Guide.docx__ => Guide written to use RISC-V gcc toolchain (Winter 2019).
-|    |--- __RISC-V FYP.docx__ => Minor document with a few overview notes.
-|    |--- __RISC-V User Guide__ => Minor document meant to accompany the course content and online content on Vicilogic.
-|--- __RISCV_Top/vhdl__ => Contains the VHDL source code and Xilinx Vivado project files.
-|    |--- __HDLModel__ => Contains VHDL source code for the RISC-V Device-Under-Test (DUT) and testbench.
-|    |--- __xilinxprj__ => Contains the Xilinx project files.
-|--- __Scripts__ => Contains a series of convenience scripts for using the RISC-V DUT.
-|    |--- __assemble.sh__ => Runs after _compile.sh_ to assemble and link RISC-V hex output for use in the RISC-V DUT.
-|    |--- __compile.sh__ => Runs the gcc compiler on a given C file.
-|    |--- __hex_to_TB.py__ => Converts RISC-V toolchain hex output into a usable format for VHDL testbench.
-|    |--- __hex_to_viciMacro.py__ => Converts RISC-V toolchain hex output into a usable format for the ViciLogic platform.
-|    |--- __little_to_big.py__ => Converts from little to big-endian.
+|--- __Documentation__ => Contains documentation for this project.  
+|    |--- __Diagrams__ => Diagrams created for thesis document.  
+|    |--- __FYP_Thesis_Joseph_Clancy.pdf__ => Bachelor's thesis document.  
+|    |--- __RISC-V Compiler Installation Guide.docx__ => Guide written to use RISC-V gcc toolchain (Winter 2019).  
+|    |--- __RISC-V FYP.docx__ => Minor document with a few overview notes.  
+|    |--- __RISC-V User Guide__ => Minor document meant to accompany the course content and online content on Vicilogic.  
+|--- __RISCV_Top/vhdl__ => Contains the VHDL source code and Xilinx Vivado project files.  
+|    |--- __HDLModel__ => Contains VHDL source code for the RISC-V Device-Under-Test (DUT) and testbench.  
+|    |--- __xilinxprj__ => Contains the Xilinx project files.  
+|--- __Scripts__ => Contains a series of convenience scripts for using the RISC-V DUT.  
+|    |--- __assemble.sh__ => Runs after _compile.sh_ to assemble and link RISC-V hex output for use in the RISC-V DUT.  
+|    |--- __compile.sh__ => Runs the gcc compiler on a given C file.  
+|    |--- __hex_to_TB.py__ => Converts RISC-V toolchain hex output into a usable format for VHDL testbench.  
+|    |--- __hex_to_viciMacro.py__ => Converts RISC-V toolchain hex output into a usable format for the ViciLogic platform.  
+|    |--- __little_to_big.py__ => Converts from little to big-endian.  
 
 ## RISC-V Overview
 
@@ -33,7 +33,7 @@ and embedded application development by taking advantage of the new open-source 
 
 The modularity afforded by the use of a 5-stage architecture allows each stage of the architecture can be treated separately. The implementation of these modules can be swapped by alternate user designs without much interference with other aspects of the processor core. For example, the Arithmetic Logic Unit (ALU) can be implemented in many ways, resulting in varying levels of performance when executing most if not all instructions. This modular facet allows students to explore, experiment with and analyse different implementations of the components contained within a processor.
 
-[![Figure 1 - Bachelor's Thesis Project Overview](Documentation/Diagrams/FYP_Context.png})]
+[![Figure 1 - Bachelor's Thesis Project Overview](/Documentation/Diagrams/FYP_Context.png})]
 
 ## References
 [1] Morgan, F. et al. (2022). RISC-V Online Tutor. In: Auer, M.E., Bhimavaram, K.R., Yue, XG. (eds) Online Engineering and Society 4.0. REV 2021. Lecture Notes in Networks and Systems, vol 298. Springer, Cham. https://doi.org/10.1007/978-3-030-82529-4_14
