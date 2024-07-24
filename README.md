@@ -33,9 +33,12 @@ Please refer to _"FYP_Thesis_Joseph_Clancy.pdf"_ in the _Documentation_ folder f
 As previously mentioned, this project was spawned from the possibility of expanding the university’s ability to educate and assess in the areas of digital system design, computer architecture, processor design
 and embedded application development by taking advantage of the new open-source RISC-V ISA, and an existing learning platform in the University of Galway, ViciLogic. An overview of the project can be found in Figure 1 below. The RISC-V processor core designed during this project is a single-cycle implementation (instructions execute in one clock cycle), similar to existing processors in the university. However, the architecture being used differs from those existing in the university by following the RISC-V methodologies. RISC-V is designed to naturally complement a 5-stage architecture, though it is not mandatory.
 
-The modularity afforded by the use of a 5-stage architecture allows each stage of the architecture can be treated separately. The implementation of these modules can be swapped by alternate user designs without much interference with other aspects of the processor core. For example, the Arithmetic Logic Unit (ALU) can be implemented in many ways, resulting in varying levels of performance when executing most if not all instructions. This modular facet allows students to explore, experiment with and analyse different implementations of the components contained within a processor.
+The modularity afforded by the use of a 5-stage architecture allows each stage of the architecture can be treated separately. The implementation of these modules can be swapped by alternate user designs without much interference with other aspects of the processor core. For example, the Arithmetic Logic Unit (ALU) can be implemented in many ways, resulting in varying levels of performance when executing most if not all instructions. This modular facet allows students to explore, experiment with and analyse different implementations of the components contained within a processor.  
+
+  
 
 ![Figure 1 - Bachelor's Thesis Project Overview](/Documentation/Diagrams/FYP_Context.png "Figure 1 - Bachelor's Thesis Project Overview")
+__Figure 1 - Bachelor's Thesis Project Overview__
 
 ## References
 [1] Morgan, F. et al. (2022). RISC-V Online Tutor. In: Auer, M.E., Bhimavaram, K.R., Yue, XG. (eds) Online Engineering and Society 4.0. REV 2021. Lecture Notes in Networks and Systems, vol 298. Springer, Cham. https://doi.org/10.1007/978-3-030-82529-4_14
