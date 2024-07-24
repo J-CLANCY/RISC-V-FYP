@@ -1,6 +1,0 @@
-Vivado Simulator 2018.2
-Time resolution is 1 ps
-Note: generate single cycle computer stimulus instruction memory array
-Time: 134 ns  Iteration: 0  Process: /singleCycCompTop_TB/STIMUsingFileIO  File: C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/testbench/singleCycCompTop_TB.vhd
-Note: simulation done
-Time: 17294 ns  Iteration: 0  Process: /singleCycCompTop_TB/STIMUsingFileIO  File: C:/Users/user/Desktop/Everyhting/College/4th_Year/FYP/RISC-V-FYP/RISCV_Top/vhdl/HDLmodel/testbench/singleCycCompTop_TB.vhd
